@@ -1,0 +1,71 @@
+#! /usr/bin/perl
+use File::Basename;
+
+# this script must be run from an x11 xterm, so the graphics are created.
+    
+# Accepts one argument: the full path to a directory.
+# Returns: A list of files that end in '.html'
+sub get_wavs {
+    my $path    = shift;
+
+    opendir (DIR, $path)
+        or die "Unable to open $path: $!";
+
+    my @files =
+        map { $path . '/' . $_ }
+    grep { !/^\.{1,2}$/ }
+    readdir (DIR);
+
+    # Rather than using a for() loop, we can just
+    # return a directly filtered list.
+    return
+        grep { (/\.wav$/) && (! -l $_) }
+    map { -d $_ ? get_wavs ($_) : $_ }
+    @files;
+}
+
+@files = get_wavs("/Users/pdiehm/Documents/books/course_in_phonetics/web/A_Course_in_Phonetics");
+
+foreach $file (@files) {
+    $wav = $file;
+
+    # make the graphic file name
+    ($name,$path,$suffix) = fileparse($wav,".wav");
+    $png = "$path$name.png";
+    next if (-e $png);
+
+    # force all sound files to be mono, 16kHz, and normalize amplitude
+    $sf = 16000;
+    $info = system("sox \"$wav\" temp.wav channels 1 rate $sf norm -3");
+
+    # get the duration from output of 'soxi'
+    $info = `soxi temp.wav`;
+    $info =~ /= (\d+) samples/;
+    $dur = ($1/$sf)*1000;
+
+    # parameters of the graphic
+    $width = int($dur/2);  # duration in ms
+    if ($width>1300) {$width=1300;}  # impose a max.
+    $W = "=".$width."x250+2";  # geometry of the spectrogram window
+
+    print "----- $png --- duration: $dur -- Geometry: $W\n";
+
+    # this is where we make the image
+    system("sgram -s0:  temp.wav temp.fspec");
+    system("plotsgram -W$W -B1 temp.fspec &");
+    until ($status = system("xwininfo -name \"ESPS image plot\" -int -wm > junk") == 0) {}
+    sleep(2);  # give it a little time to finish drawing
+
+    system("xwd -name \"ESPS image plot\" | convert - -quality 1 \"$png\"");
+#    $ok = <STDIN>;
+
+    #close the window  - window id is stored in file "junk" by xwininfo above
+    $status = system("xwininfo -name \"ESPS image plot\" -int -wm > junk");
+    open(JUNK,"junk") or die "unable to open junk :$!\n";
+    while (<JUNK>) {
+	if (/Window id: (\d+)/) {$id = $1; last;}
+    }
+    close JUNK;
+    system("xkill -id $id");
+    system("rm temp.*");
+}
