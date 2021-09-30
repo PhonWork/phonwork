@@ -86,10 +86,10 @@ an answer.  And of course, you can ask multiple choice questions instead of requ
 *ask_question()*  
 
   - clears the *answerbox*, *feedback*, and *example* spans if they exist in the html code of the page
-  - if there is an element with the id *question* then the text in the array *quest[]* is presented.
-  - if there is an element with the id *video_here* then the file named in *vidfiles[]* is presented.
-  - if there is an element with the id *audio_questions* then the file named in *soundfiles[]* is presented.
-  - if there is an element with the id *image_question* then the file named in *imgfiles[]* is presented.
+  - if there is an element with id = *question* then the text in the array *quest[]* is presented.
+  - if there is an element with id = *video_here* then the file named in *vidfiles[]* is presented.
+  - if there is an element with id = *audio_questions* then the file named in *soundfiles[]* is presented.
+  - if there is an element with id = *image_question* then the file named in *imgfiles[]* is presented.
 
 This routine presents different kinds of questions depending on whether the html code of the page 
 has tags for text, video, audio, or image questions.  An example of an audio question would have text on the screen 
@@ -98,35 +98,35 @@ like `<span id=audio_questions></span>` *ask_question()* will assume that there 
 *soundfiles[]* and will play the next one in the (randomized) list.  
 
 *show_practice_item()*
-  - puts the text in *quest[]* in the span identified with the id *practice_item*
-  - updates the count presented in the span identified withe the id *run*
+  - puts the text in *quest[]* in the span identified with id = *practice_item*
+  - updates the count presented in the span identified with id = *run*
 
 *check_answer()*
-  - if there is an element with the id *example* then fill that element with text from the array *example[]*
-  - if there is an element with the id *audio_answers* then play the next soundfile in *soundfiles2[]*
-  - if there is an element with the id *answerbox* check whether the typed answer is correct
+  - if there is an element with id = *example* then fill that element with text from the array *example[]*
+  - if there is an element with id = *audio_answers* then play the next soundfile in *soundfiles2[]*
+  - if there is an element with id = *answerbox* check whether the typed answer is correct
   - display feedback in the *feedback* span (1.5 seconds for correct answers, 3.5 seconds for incorrect answers)
   - update and show the counts of *correct* and *run*
 
 *check_mc_answer(id)*
   - get the value from the multiple choice item that has the id tag passed in *id*
-  - display feedback and keep count of number correct as in *check_answer*
+  - display feedback and keep count of number correct as in *check_answer()*
 
 Use this function to collect multiple choice answers instead of requiring users to type text input. 
 
 *play_audio_example()*
-  - assume that there is an element *audio_example*
+  - assume that there is an element id = *audio_example*
   - play the next sound file in the list *soundfiles2[]*
 
 *play_video_example()*
-  - assume that there is a video element *video_example* already loaded
+  - assume that there is a video element id = *video_example* already loaded
   - this function requests that that element start playing
 
 *finish()*
   - check whether we have completed the required number of correct responses and have a long enough run of correct responses.
   - if not call *ask_question()* again
   - if yes call *make_inline_png_cert(exerciseName)* to make a certificate of completion for this exercise.
-  - if yes add completion information to this browswer's local storage area - evidence of completion
+  - if yes add completion information to this browswer's *localStorage* area - evidence of completion
 
 *next_practice()*
   - does the same thing for "practice" pages - where there are no correct answers
@@ -134,6 +134,7 @@ Use this function to collect multiple choice answers instead of requiring users 
 
 *make_png_cert(exname)*
   - creates a certificate of completion for a particular exercise in a new window in the browser
+  - uses *localStorage* to find the completion info
   - warn user if the browswer is preventing the page from opening a new window
 
 *make_inline_png_cert(exname)*
