@@ -40,7 +40,7 @@ The key elements in the code that makes it an exercise are:
   - there is a span with the id name of "correct"
   - there is a span with the id name of "run"
   - there is an input element with the id name "answerbox", 
-  - and, the input element calls a function "check_answer() when the participant presses "return"
+  - and, the input element calls a function "check_answer() when the student presses "return"
   
 ## Questions and answers ##
        
