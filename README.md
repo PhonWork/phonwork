@@ -23,6 +23,8 @@ trying to generate the site.
 
 ## Editing and building the site
 
+See the [Phonwork Manual](manual_for_exercises_javascript.md) for details on how to create or modify exercises in this framework.
+
 Templates for the site pages are in the `_templates` directory. Templates
 with filenames beginning with an alphabetic character are rendered as content
 pages that use the overall layout determined by `_base_page.html`. Other
