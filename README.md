@@ -1,6 +1,6 @@
 # The Phonwork Project
 
-This repository contains templates for generating a Phonetics Workbook as a static html site.  
+This repository contains templates for generating a Phonetics Workbook as a static html site.  See the current version of the site at https://linguistics.berkeley.edu/phonwork
 
 The aim is to create an open access phonetics workbook using a framework that makes it possible for teachers from around the world to make contributions to the workbook. Teachers around the world produce excellent phonetics exercises for their classes.  It is now possible to support and make materials such as these available in an open access format, and this is one attempt at doing so.
 
