@@ -2,7 +2,7 @@
 
 This repository contains templates for generating a Phonetics Workbook as a static html site.  See the current version of the site at https://linguistics.berkeley.edu/phonwork
 
-The aim is to create an open access phonetics workbook using a framework that makes it possible for phoneticians to make contributions to the workbook. Phonetics teachers around the world produce excellent phonetics exercises for their classes.  The hope of this project is to make a broad and deep range of materials available in an open access format.
+The aim is to create an open access phonetics workbook using a framework that makes it possible for phoneticians to make contributions to the workbook. Phonetics teachers around the world produce excellent phonetics exercises for their classes.  The hope of this project is to fascilitate the sharing of teaching materials, by making a broad and deep range of materials available in an open access format.
 
 ## The approach
 
