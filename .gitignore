@@ -130,3 +130,6 @@ dmypy.json
 
 # Site build result
 _site/
+
+# MacOS file
+.DS_Store
