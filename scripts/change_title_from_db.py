@@ -8,7 +8,7 @@ enc = 'utf-8'
 pattern = r'<title>(\d+\.\d+)\s(.+)<\/title>'
 
 non_converted_files = []
-
+print(files)
 for file in files:
     with open(file, 'r', encoding=enc) as f:
         page = f.read()
@@ -18,35 +18,35 @@ for file in files:
     
     try:
         dfname = df.loc[num].Name
-        file = df.loc[num].Url
+        filename = df.loc[num].Url
+        print(filename)
     except KeyError:
         non_converted_files.append("\nFile does not have a mapping in the database: " + file)
-        print("File does not have a mapping in the database: " + file)
+        #print("File does not have a mapping in the database: " + file)
         continue
         
-    title = r"<title>" + dfname + r"<\/title"
+    title = r"<title>" + dfname + r"<\/title>"
     
     initialize = re.search(r'<body onload="initialize\((?:rand=)*(\d)*\)">', page, flags=re.M)
     if initialize:
         isRand = initialize.group(1)
     else:
-       print('Special file has no intialize variable' + dfname)
-       non_converted_files.append('\nSpecial file has no intialize variable' + dfname)
-       continue
+        load_guess = re.search(r'<body onload="load_guess\(\'*(\d)\'*\)">', page, flags=re.M)
+        if load_guess:
+            isRand = load_guess.group(1)
+        else:
+            #print('Special file has no intialize or load_guess variable ' + dfname)
+            non_converted_files.append('\nSpecial file has no intialize or load_guess variable ' + dfname)
+            continue
     
     body = re.search(r'<!-- Main -->([\s\S]+)<!-- Footer -->', page, flags=re.M).group(1)
     
     if not isRand:
         isRand = 0
     
-    
-    
-    
-    #print(title, isRand, body)
-    
-    with open('exercises_html/' + file, 'w+', encoding=enc) as f:
+    print(r"file is: " + filename + r' ')    
+    with open('exercises_html/' + filename, 'w+', encoding=enc) as f:
         f.write(r'<!-- Title  -->' + title + '\n<!-- IsRand ' + str(isRand) + ' -->\n\t' + r'<!-- Main -->' + body)
-        #print("Fixed " + dfname)
     
     with open('exercises_html/non_converted_files.txt', 'w+', encoding=enc) as f:
         [f.write(string) for string in non_converted_files]
