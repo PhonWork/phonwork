@@ -18,10 +18,11 @@ for file in files:
     
     try:
         dfname = df.loc[num].Name
-        file = df.loc[num].Url
+        filename = df.loc[num].Url
+        print(filename)
     except KeyError:
         non_converted_files.append("\nFile does not have a mapping in the database: " + file)
-        print("File does not have a mapping in the database: " + file)
+        #print("File does not have a mapping in the database: " + file)
         continue
         
     title = r"<title>" + dfname + r"<\/title>"
@@ -34,7 +35,7 @@ for file in files:
         if load_guess:
             isRand = load_guess.group(1)
         else:
-            print('Special file has no intialize or load_guess variable ' + dfname)
+            #print('Special file has no intialize or load_guess variable ' + dfname)
             non_converted_files.append('\nSpecial file has no intialize or load_guess variable ' + dfname)
             continue
     
@@ -43,8 +44,8 @@ for file in files:
     if not isRand:
         isRand = 0
     
-        
-    with open('exercises_html/' + file, 'w+', encoding=enc) as f:
+    print(r"file is: " + filename + r' ')    
+    with open('exercises_html/' + filename, 'w+', encoding=enc) as f:
         f.write(r'<!-- Title  -->' + title + '\n<!-- IsRand ' + str(isRand) + ' -->\n\t' + r'<!-- Main -->' + body)
     
     with open('exercises_html/non_converted_files.txt', 'w+', encoding=enc) as f:
