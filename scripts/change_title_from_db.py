@@ -14,7 +14,7 @@ for file in files:
         page = f.read()
        
     num = re.search('ex(.+).php', file).group(1)
-    num = re.sub('_', '.', num)
+    #num = re.sub('_', '.', num)
     
     try:
         dfname = df.loc[num].Name
