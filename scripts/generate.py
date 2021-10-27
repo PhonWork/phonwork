@@ -44,11 +44,16 @@ def make_page(bodyfile, layout, cfg, templatedir, sitedir):
     sitedir : str
     The directory path where output .html files will be written.
     '''
+    #Interpolates cfg variables into bodyfile variable slots
     body = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templatedir)
     ).get_template(bodyfile).render(cfg=cfg)
 
-    page = layout.render(body=body)
+
+    #Variables in layout.render are the variables set out by the _layout html file
+    #Differs from just body in that it also includes menu and other webpage items?
+    page = layout.render(body=body)         
+    
     with open(os.path.join(sitedir, bodyfile), 'w') as f: f.write(page)
 
 if __name__ == '__main__':
