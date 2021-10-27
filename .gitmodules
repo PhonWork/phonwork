@@ -1,0 +1,6 @@
+[submodule "_DB_mri_movies"]
+	path = _DB_mri_movies
+	url = https://github.com/PhonWork/DB_mri_movies
+[submodule "_MG_mri_movies"]
+	path = _MG_mri_movies
+	url = https://github.com/PhonWork/MG_mri_movies
