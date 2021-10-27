@@ -1,5 +1,0 @@
-banner size = 822x201
-banner aspect ratio = 4.089?
-
-menu square size = 353x326
-ratio = 1.0828
