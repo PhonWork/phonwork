@@ -27,10 +27,10 @@ def prep_sitedir(sitedir, jsdir, cssdir):
     except FileNotFoundError:
         pass
     os.mkdir(sitedir)
-    shutil.copytree(jsdir, os.path.join(sitedir, 'js'))
-    shutil.copytree(cssdir, os.path.join(sitedir, 'css'))
-    shutil.copytree(imgdir, os.path.join(sitedir, 'images'))
-    shutil.copytree(snddir, os.path.join(sitedir, 'sounds'))
+    shutil.copytree(jsdir, os.path.join(sitedir, 'assets/js'))
+    shutil.copytree(cssdir, os.path.join(sitedir, 'assets/css'))
+    shutil.copytree(imgdir, os.path.join(sitedir, 'media/images'))
+    shutil.copytree(snddir, os.path.join(sitedir, 'media/sounds'))
 
 
 def make_page(bodyfile, layout, cfg, templatedir, sitedir):
@@ -56,7 +56,7 @@ def make_page(bodyfile, layout, cfg, templatedir, sitedir):
         rand = f.readline().strip()
         main = f.read()
         print(title, rand, main)
-    script = '"' + jsdir[2:] + "/ex/" + bodyfile[:-4] + 'js"'
+    script = '"' + jsdir[3:] + "/ex/" + bodyfile[:-4] + 'js"'
     print(script)
     '''body = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templatedir)
