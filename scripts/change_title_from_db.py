@@ -8,13 +8,13 @@ enc = 'utf-8'
 pattern = r'<title>(\d+\.\d+)\s(.+)<\/title>'
 
 non_converted_files = []
-print(files)
+#print(files)
 for file in files:
     with open(file, 'r', encoding=enc) as f:
         page = f.read()
-       
     num = re.search('ex(.+).php', file).group(1)
-    num = re.sub('_', '.', num)
+    #num = re.sub('_', '.', num)
+    print(num)
     
     try:
         dfname = df.loc[num].Name
@@ -22,10 +22,10 @@ for file in files:
         print(filename)
     except KeyError:
         non_converted_files.append("\nFile does not have a mapping in the database: " + file)
-        #print("File does not have a mapping in the database: " + file)
+        print("File does not have a mapping in the database: " + file)
         continue
         
-    title = r"<title>" + dfname + r"<\/title>"
+    title = r"<title>" + dfname + r"</title>"
     
     initialize = re.search(r'<body onload="initialize\((?:rand=)*(\d)*\)">', page, flags=re.M)
     if initialize:
@@ -35,7 +35,7 @@ for file in files:
         if load_guess:
             isRand = load_guess.group(1)
         else:
-            #print('Special file has no intialize or load_guess variable ' + dfname)
+            print('Special file has no intialize or load_guess variable ' + dfname)
             non_converted_files.append('\nSpecial file has no intialize or load_guess variable ' + dfname)
             continue
     
@@ -46,7 +46,7 @@ for file in files:
     
     print(r"file is: " + filename + r' ')    
     with open('exercises_html/' + filename, 'w+', encoding=enc) as f:
-        f.write(r'<!-- Title  -->' + title + '\n<!-- IsRand ' + str(isRand) + ' -->\n\t' + r'<!-- Main -->' + body)
+        f.write(title + '\n' + str(isRand) + '\n\t' + body)
     
     with open('exercises_html/non_converted_files.txt', 'w+', encoding=enc) as f:
         [f.write(string) for string in non_converted_files]

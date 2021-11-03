@@ -1,12 +1,12 @@
 # The Phonwork Project
 
-This repository contains templates for generating a Phonetics Workbook as a static html site.  See the current version of the site at https://linguistics.berkeley.edu/phonwork
+This repository contains templates for generating a Phonetics Workbook as a static HTML site.  See the current version of the site at https://linguistics.berkeley.edu/phonwork
 
-The aim is to create an open access phonetics workbook using a framework that makes it possible for phoneticians to make contributions to the workbook. Phonetics teachers around the world produce excellent phonetics exercises for their classes.  The hope of this project is to fascilitate the sharing of teaching materials, by making a broad and deep range of materials available in an open access format.
+The aim is to create an open-access phonetics workbook using a framework that makes it possible for phoneticians to make contributions to the workbook. Phonetics teachers around the world produce excellent phonetics exercises for their classes.  This project hopes to facilitate the sharing of teaching materials, by making a broad and deep range of materials available in an open-access format.
 
 ## The approach
 
-Phonwork is a *framework* for producing and presenting phonetics exercises, and an *initial bank of exercises*.  The elements of the framework are relatively modular and extensible.  The **graphic user interface** is from the "Phantom" template by HTML5up.net, and can be replaced by other GUI frameworks.  The **javascript** functions to power the question/answer format of the exercises are in the file *exercises.js*. This is a lean but general javascript framework that makes it possible to write new exercises without needing to write any new javascript. Many of the **initial bank of exercises** are drawn from the exercices for Ladefoged's "A Course in Phonetics" which is also hosted at UC Berkeley (https://linguistics.berkeley.edu/acip).  This project grew out of the experience of creating the Course in Phonetics site.  The **framework** of page templates and python scripts to generate the site allows for changes in contents and organization to be incorporated quickly and easily, and allows for the creation of local variants of the site. **Media files** in the initial bank of exercises are hosted by UC Berkeley on AWS, to increase the world-wide responsiveness of the page.  With permission, contributors' audio and video can also be hosted in this way.
+Phonwork is a *framework* for producing and presenting phonetics exercises, and an *initial bank of exercises*.  The elements of the framework are relatively modular and extensible.  The **graphic user interface** is from the "Phantom" template by HTML5up.net, and can be replaced by other GUI frameworks.  The **javascript** functions to power the question/answer format of the exercises are in the file *exercises.js*. This is a lean but general javascript framework that makes it possible to write new exercises without needing to write any new javascript. Much of the **initial bank of exercises** are drawn from the exercises for Ladefoged's "A Course in Phonetics" which is also hosted at UC Berkeley (https://linguistics.berkeley.edu/acip).  This project grew out of the experience of creating the Course in Phonetics site.  The **framework** of page templates and python scripts to generate the site allows for changes in contents and organization to be incorporated quickly and easily and allows for the creation of local variants of the site. **Media files** in the initial bank of exercises are hosted by UC Berkeley on AWS, to increase the worldwide responsiveness of the page.  With permission, contributors' audio and video can also be hosted in this way.
 
 ## Getting started
 
@@ -29,7 +29,7 @@ Templates for the site pages are in the `_templates` directory. Templates
 with filenames beginning with an alphabetic character are rendered as content
 pages that use the overall layout determined by `_base_page.html`. Other
 templates beginning with underscore may be used to include sublayouts and
-are not rendered as separate html files.
+are not rendered as separate HTML files.
 
 To generate the site, do:
 
@@ -38,9 +38,18 @@ cd scripts
 python generate.py
 ```
 
-The content pages will be rendered to html files in the `_site` directory.
+The content pages will be rendered to HTML files in the `_site` directory.
 Before the pages are generated the existing `_site` directory will be
 cleared of existing content.
+
+## Media Submodules ##
+
+Many of the media files used in PhonWork are licensed with different copyright restrictions on usage. For this reason, we are using submodules to store media based on copyright status. However, the symbolic link to the submodules within the main Github repository will not update when new media is added to a submodule.
+
+To fix this, run
+
+```bash
+git submodule update```
 
 ## Viewing the site
 
@@ -50,7 +59,7 @@ the current website.
 ## Publishing the site
 
 If the results of viewing the site are satisfactory, push the changes to
-github and then copy the current site files to the public server. A sample
+Github and then copy the current site files to the public server. A sample
 set of commands:
 
 ```bash
