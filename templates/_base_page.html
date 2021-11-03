@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>{{ title }}</title>
+  {{ title }}
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
@@ -12,19 +12,18 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/exercises.js"></script>
-  {{ custom_script }}
+  <script src={{ custom_script }}></script>
 
 </head>
+  <body onload="initialize(rand={{ rand }})" class="" data-new-gr-c-s-check-loaded="8.888.0" data-gr-ext-installed="">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-<body>
-  <!-- Wrapper -->
-  <div id="wrapper">
-
-{% include '_header.html' %}
-{% include '_menu.html' %}
-{{ main }}	 
-{% include 'footer.html' %}
-
-  </div>  
-</body>
+      {% include '_header.html' %}
+      {{ main }}	 
+      {% include '_footer.html' %}
+    </div>
+    {% include '_menu.html' %}
+	
+  </body>
 </html>
