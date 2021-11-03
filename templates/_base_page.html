@@ -1,11 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-
-{{ title }}
-
+  <title>{{ title }}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
   <link rel="stylesheet" href="assets/css/main.css" />
 
   <script src="assets/js/jquery.min.js"></script>
@@ -13,8 +12,7 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/exercises.js"></script>
-
-{{ custom_script }}
+  {{ custom_script }}
 
 </head>
 
@@ -22,10 +20,10 @@
   <!-- Wrapper -->
   <div id="wrapper">
 
-{{ header }}
-{{ menu }}
-{{ main }} 
-{{ footer }}
+{% include '_header.html' %}
+{% include '_menu.html' %}
+{{ main }}	 
+{% include 'footer.html' %}
 
   </div>  
 </body>

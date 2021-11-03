@@ -46,7 +46,7 @@ for file in files:
     
     print(r"file is: " + filename + r' ')    
     with open('exercises_html/' + filename, 'w+', encoding=enc) as f:
-        f.write(r'<!-- Title  -->' + title + '\n<!-- IsRand ' + str(isRand) + ' -->\n\t' + r'<!-- Main -->' + body)
+        f.write(title + '\n' + str(isRand) + '\n' + body)
     
     with open('exercises_html/non_converted_files.txt', 'w+', encoding=enc) as f:
         [f.write(string) for string in non_converted_files]

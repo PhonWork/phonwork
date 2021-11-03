@@ -7,10 +7,10 @@ import glob
 import jinja2
 import shutil
 
-templatedir = '../_templates'
-sitedir = '../_site'
-jsdir = '../_js'
-cssdir = '../_css'
+templatedir = '../templates'
+sitedir = '../site'
+jsdir = '../js'
+cssdir = '../css'
 
 # Values to be interpolated into Jinja2 templates.
 cfg = {
@@ -45,12 +45,14 @@ def make_page(bodyfile, layout, cfg, templatedir, sitedir):
     The directory path where output .html files will be written.
     '''
     #Interpolates cfg variables into bodyfile variable slots
+    with open(templatedir + "\\" + bodyfile + ".html"):
+        
     body = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templatedir)
     ).get_template(bodyfile).render(cfg=cfg)
 
 
-    #Variables in layout.render are the variables set out by the _layout html file
+    #Variables in layout.render are the variables set out by the _base_page html file
     #Differs from just body in that it also includes menu and other webpage items?
     page = layout.render(body=body)         
     
@@ -61,7 +63,7 @@ if __name__ == '__main__':
 
     layout = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templatedir)
-    ).get_template('_layout.html')
+    ).get_template('_base_page.html')
 
     for bodypath in glob.glob(os.path.join(templatedir, '*.html')):
         bodyfile = os.path.basename(bodypath)
