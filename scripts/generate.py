@@ -12,7 +12,8 @@ sitedir = '../site'
 jsdir = '../assets/js'
 cssdir = '../assets/css'
 enc = 'utf-8'
-images = '../images'
+imgdir = '../media/images'
+snddir = '../media/sounds' 
 
 # Values to be interpolated into Jinja2 templates.
 cfg = {
@@ -28,7 +29,9 @@ def prep_sitedir(sitedir, jsdir, cssdir):
     os.mkdir(sitedir)
     shutil.copytree(jsdir, os.path.join(sitedir, 'js'))
     shutil.copytree(cssdir, os.path.join(sitedir, 'css'))
-    shutil.copytree(images, os.path.join(sitedir, 'images'))
+    shutil.copytree(imgdir, os.path.join(sitedir, 'images'))
+    shutil.copytree(snddir, os.path.join(sitedir, 'sounds'))
+
 
 def make_page(bodyfile, layout, cfg, templatedir, sitedir):
     '''
