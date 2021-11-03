@@ -1,0 +1,29 @@
+<title>Guess the word - time traces</title>
+2
+	
+    <div id="main">
+      <div class="inner">
+	<h1>Guess the word</h1>
+	<p>The horizontal axis is time, the traces are vertical movement of articulators.</p>
+	  <p>blue = tongue tip vertical, red = tongue body vertical, green = lower lip vertical.</p>
+
+	<canvas id="guess" width="300px" height="150px" style="border:1px solid #0000;" class="image fit"></canvas>
+
+	<p><input type="button" value="0" onclick="process_button_click(0)" id="b0"> 
+	<input type="button" value="1" onclick="process_button_click(1)" id="b1"> 
+	<input type="button" value="2" onclick="process_button_click(2)" id="b2"> 
+	<input type="button" value="3" onclick="process_button_click(3)" id="b3"> </p>
+
+	<p style="font-size:small">Correct: <span id="correct">0</span> ---- Run: <span id="run">0</span></p>	
+        <p><span id="feedback"></span></p>
+
+	<p>made by: Eric Chen</p>
+	<p>data: Westbury, J.R. (1994) 'X-ray Microbeam Speech
+Production Database User's Handbook.' Waisman Center on Mental
+Retardation and Human Development, University of Wisconsin, Madison,
+WI.</p>
+
+      </div>  <!-- inner -->
+    </div> <!-- main -->
+    
+    

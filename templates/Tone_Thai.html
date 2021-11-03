@@ -1,0 +1,21 @@
+<title>Tone in Thai</title>
+0
+	
+    <div id="main">
+      <div class="inner">
+	<h1>Tone contrasts in Thai</h1>
+
+	<span class="image fit"><img src="sounds/thai/tm.gif" width="400px"></span>
+
+	<p>What Thai word is this?</p>
+
+<p><input id="audio_questions" type="button" onclick="document.getElementById('theaudio').play();document.getElementById('answerbox').focus();" value="play"></p>
+
+	  <input id="answerbox" type="text" onkeydown="if (event.keyCode == 13) check_answer()" placeholder="type answer here">
+	  <span id="feedback"></span></p>
+	<p style="font-size:small">Correct: <span id="correct">0</span> ---- Run: <span id="run">0</span></p>	
+
+      </div>
+    </div>
+    
+    
