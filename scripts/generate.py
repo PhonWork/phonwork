@@ -6,6 +6,7 @@ import os
 import glob
 import jinja2
 import shutil
+import re
 
 templatedir = '../templates'
 sitedir = '../site'
@@ -51,21 +52,27 @@ def make_page(bodyfile, layout, cfg, templatedir, sitedir):
     The directory path where output .html files will be written.
     '''
     #Interpolates cfg variables into bodyfile variable slots
-    with open(templatedir + "/" + bodyfile, encoding=enc) as f:
-        title = f.readline().strip()
-        rand = f.readline().strip()
+    with open(templatedir + "/" + bodyfile, encoding=enc) as f:        
+        var = f.readline().strip()
         main = f.read()
-        print(title, rand, main)
+        
+    #rand = "rand=" + re.search(r'(?<=Rand)(.+)(?=Rand)',var).group(0)
     script = '"' + jsdir[3:] + "/ex/" + bodyfile[:-4] + 'js"'
     print(script)
-    '''body = jinja2.Environment(
-        loader=jinja2.FileSystemLoader(templatedir)
-    ).get_template(bodyfile).render(cfg=cfg)'''
+    
+    title = re.search(r'(?<=Title)(.+)(?=Title)',var).group(0)
+    #guess = "'" + re.search(r'(?<=Guess)(.+)(?=Guess)',var).group(0) + "'"
+    
+    body = re.search(r'(?<=Body)(.+)(?=Body)',var).group(0)
+
+
+    print(title, body, main)
+    
 
 
     #Variables in layout.render are the variables set out by the _base_page html file
     #Differs from just body in that it also includes menu and other webpage items?
-    page = layout.render(title = title, rand = rand, main = main, custom_script = script)         
+    page = layout.render(title = title, bodystuff = body, main = main, custom_script = script)         
     
     with open(os.path.join(sitedir, bodyfile), 'w', encoding=enc) as f: f.write(page)
 
