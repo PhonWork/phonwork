@@ -3,7 +3,7 @@
 exerciseName = "Say the Primary Cardinal Vowels";
 mincorrect=13;
 minrun=3;
-var namebase="sounds/cardinal/";
+var namebase="media/sounds/cardinal/";
 var n = 8;
 
 for (var i=0; i<n; i++) {

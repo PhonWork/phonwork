@@ -3,7 +3,7 @@
 exerciseName = "Bura Transcription";
 mincorrect=16;
 minrun=4;
-var namebase="sounds/bura/"
+var namebase="media/sounds/bura/"
 
 
 soundfiles[0] =namebase+"b1"; answer[0] = "w";

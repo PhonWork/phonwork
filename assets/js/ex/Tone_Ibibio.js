@@ -5,7 +5,7 @@ mincorrect=7;
 minrun=3;
 var n=6;
 
-var namebase="sounds/ibibio/ib";
+var namebase="media/sounds/ibibio/ib";
 
 for (var i=0; i<n; i++) {
     token = i+1;

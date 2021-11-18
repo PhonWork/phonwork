@@ -3,7 +3,7 @@
 exerciseName = "Mam Place of Articulation";
 mincorrect=10;
 minrun=3;
-var namebase="sounds/cons_poa/";
+var namebase="media/sounds/cons_poa/";
 
 imgfiles[0] = namebase+ "mam_chi-l.png"; 
 imgfiles[1] = namebase+ "mam_k-a.png"; 

@@ -5,7 +5,7 @@ mincorrect=8;
 minrun=3;
 var n=6;
 
-var namebase="sounds/thai/thai"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/thai/thai"; // files are lg/lg1.wav, etc
 
 for (var i=0; i<n; i++) {
     token = i+1;

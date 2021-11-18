@@ -3,7 +3,7 @@
 exerciseName = "Mandarin Fricatives";
 mincorrect=10;
 minrun=3;
-var namebase="sounds/mandarin/"
+var namebase="media/sounds/mandarin/"
 
 
 soundfiles[0] =namebase+"c11"; answer[0] = "issue";

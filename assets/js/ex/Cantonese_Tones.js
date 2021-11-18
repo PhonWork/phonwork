@@ -5,7 +5,7 @@ mincorrect=10;
 minrun=3;
 var n=9;
 
-var namebase="sounds/cantonese/ca";
+var namebase="media/sounds/cantonese/ca";
 
 for (var i=0; i<n; i++) {
     token = i+1;

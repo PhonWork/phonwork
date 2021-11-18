@@ -12,7 +12,7 @@ quest[4]="on the"; answer[4]="5";
 quest[5]="notion"; answer[5]="6";
 quest[6]="of"; answer[6]="7";
 quest[7]="discrete"; answer[7]="8";
-quest[8]="sounds"; answer[8]="9";
+quest[8]="media/sounds"; answer[8]="9";
 
 
 

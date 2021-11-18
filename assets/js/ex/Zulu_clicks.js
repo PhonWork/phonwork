@@ -5,7 +5,7 @@ mincorrect=12;
 minrun=3;
 var n=12;
 
-var namebase="sounds/zulu/zulu"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/zulu/z"; // files are lg/lg1.wav, etc
 
 for (var i=0; i<n; i++) {
     token = i+21;

@@ -3,7 +3,7 @@
 exerciseName = "Hindi Stop Transcription";
 mincorrect=20;
 minrun=4;
-var namebase="sounds/hindi/"
+var namebase="media/sounds/hindi/"
 
 
 soundfiles[0] =namebase+"h1"; answer[0] = "p";

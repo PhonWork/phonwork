@@ -3,7 +3,7 @@
 exerciseName = "Nafaanra Place of Articulation";
 mincorrect=7;
 minrun=2;
-var namebase="sounds/cons_poa/";
+var namebase="media/sounds/cons_poa/";
 
 imgfiles[0] = namebase+ "nfr_tO.png"; 
 imgfiles[1] = namebase+ "nfr_gaabu.png"; 

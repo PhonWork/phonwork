@@ -6,7 +6,7 @@ minrun=3;
 n = 28;
 debug=1;
 
-var namebase="sounds/arabic/a"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/arabic/a"; // files are lg/lg1.wav, etc
 
 soundfiles[0] = namebase+'1';       answer[0] = "figs";
 soundfiles[1] = namebase+'2';       answer[1] = "mud";

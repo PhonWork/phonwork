@@ -3,7 +3,7 @@
 exerciseName = "Vowel Muscles";
 mincorrect=15;
 minrun=3;
-var namebase="images/ex/";
+var namebase="media/images/ex/";
 
 imgfiles[0] = namebase+ "Gick_8.8.png"; 
 imgfiles[1] = namebase+ "Gick_8.8.png"; 

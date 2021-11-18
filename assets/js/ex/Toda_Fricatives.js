@@ -3,7 +3,7 @@
 exerciseName = "Toda Fricatives";
 mincorrect=7;
 minrun=3;
-var namebase="sounds/toda/"
+var namebase="media/sounds/toda/"
 
 
 soundfiles[0] =namebase+"t1"; answer[0] = "swelling";

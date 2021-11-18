@@ -1,29 +1,44 @@
 // must assume the existence of some variables (defined in exercises.js)
 
-exerciseName = "Zulu clicks";
-mincorrect=12;
+exerciseName = "Russian palatalization";
+mincorrect=26;
 minrun=3;
-var n=12;
+n = 26;
 debug=1;
 
-var namebase="sounds/zulu/z"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/russian/r"; // files are lg/lg1.wav, etc
 
 for (var i=0; i<n; i++) {
-    token = i+21;
+    token = i+1;
     soundfiles[i] = namebase+token.toString();
 }
-answer[0] = "to whitewash";
-answer[1] = "to undo";
-answer[2] = "put into a fix";
-answer[3] = "to identify";
-answer[4] = "to rip open";
-answer[5] = "to link horses";
-answer[6] = "to grease";
-answer[7] = "to milk";
-answer[8] = "to beat";
-answer[9] = "(kind of spear)";
-answer[10] = "rump";
-answer[11] = "left hand";
+answer[0] = "pact";
+answer[1] = "five";
+answer[2] = "he was";
+answer[3] = "to strike";
+answer[4] = "that";
+answer[5] = "aunt";
+answer[6] = "at home";
+answer[7] = "(name)";
+answer[8] = "to eat";
+answer[9] = "dish";
+answer[10] = "form";
+answer[11] = "farm";
+answer[12] = "to howl";
+answer[13] = "to weave";
+answer[14] = "juice";
+answer[15] = "he lashed";
+answer[16] = "call";
+answer[17] = "yawn";
+answer[18] = "little";
+answer[19] = "crumple";
+answer[20] = "nose";
+answer[21] = "he carried";
+answer[22] = "catch";
+answer[23] = "lion";
+answer[24] = "race";
+answer[25] = "priest's frock";
+
 
 
 

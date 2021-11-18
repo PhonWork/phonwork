@@ -5,7 +5,7 @@ mincorrect=10;
 minrun=3;
 var n=14;
 
-var namebase="sounds/korean/k";  // files are sindhi/sindhi1.wav, etc
+var namebase="media/sounds/korean/k";  // files are sindhi/sindhi1.wav, etc
 
 for (var i=0; i<n; i++) {
     token = i+1;

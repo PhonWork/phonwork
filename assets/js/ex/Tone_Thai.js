@@ -5,7 +5,7 @@ mincorrect=6;
 minrun=3;
 var n=5;
 
-var namebase="sounds/thai/t2";
+var namebase="media/sounds/thai/t2";
 
 for (var i=0; i<n; i++) {
     token = i+1;
