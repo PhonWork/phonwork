@@ -4,11 +4,13 @@ import re, glob, os
 import pandas as pd
 df = pd.read_csv("nametourl.csv", index_col=[0,1])
 print(df)
+print(df.loc['Start here'])
+print(df.index.tolist())
 '''
 os.chdir("../templates")
-files = [f for f in os.listdir('.') if re.match(r'^ex[0-9_]+\.php', f)]
+#files = [f for f in os.listdir('.') if re.match(r'^ex[0-9_]+\.php', f)]
 enc = 'utf-8'
-pattern = r'<title>(\d+\.\d+)\s(.+)<\/title>'
+#pattern = r'<title>(\d+\.\d+)\s(.+)<\/title>'
 
 non_converted_files = []
 #print(files)

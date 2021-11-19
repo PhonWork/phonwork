@@ -1,99 +1,89 @@
 DoppelIndex,Name,Num,Url,Description
 Start here,Backward syllable counting,1_8,Backward_syllable_counting.html,Counting syllables in acoustically reversed speech.
-,Vocal tract tour,1_1,Vocal_tract_tour.html,Identify landmarks in the vocal tract.
-,One of these vowels,1_7,One_of_these_vowels.html,Compare how vowels sound to how they are spelled.
-,Consonant descriptions,1_2,Consonant_descriptions.html,Associate phonetic properties with IPA symbols.
-,Terms for sounds in English words - 1,1_3,Terms_for_sounds_English_words_1.html,Terms as they are used to describe sounds in English.
-,Terms for sounds in English words - 2,1_5,Terms_for_sounds_English_words_2.html,Review phonetic terms for English sounds.
-,IPA Practice: English sounds 1,1_a,IPA_English_sounds_1.html,"Work with a partner, and practice IPA Production and Transcription."
-,IPA Practice: English sounds 2,1_b,IPA_English_sounds_2.html,"Work with a partner, and practice IPA Production and Transcription."
-,IPA Practice: English sounds 3,1_c,IPA_English_sounds_3.html,"Work with a partner, and practice IPA Production and Transcription."
-,,,,
+Start here,Vocal tract tour,1_1,Vocal_tract_tour.html,Identify landmarks in the vocal tract.
+Start here,One of these vowels,1_7,One_of_these_vowels.html,Compare how vowels sound to how they are spelled.
+Start here,Consonant descriptions,1_2,Consonant_descriptions.html,Associate phonetic properties with IPA symbols.
+Start here,Terms for sounds in English words - 1,1_3,Terms_for_sounds_English_words_1.html,Terms as they are used to describe sounds in English.
+Start here,Terms for sounds in English words - 2,1_5,Terms_for_sounds_English_words_2.html,Review phonetic terms for English sounds.
+Start here,IPA Practice: English sounds 1,1_a,IPA_English_sounds_1.html,"Work with a partner, and practice IPA Production and Transcription."
+Start here,IPA Practice: English sounds 2,1_b,IPA_English_sounds_2.html,"Work with a partner, and practice IPA Production and Transcription."
+Start here,IPA Practice: English sounds 3,1_c,IPA_English_sounds_3.html,"Work with a partner, and practice IPA Production and Transcription."
 The IPA,Bell's visible speech,1_4,Bells_visible_speech.html,"Take a look at an ""organic"" phonetic alphabet."
-,Vowel descriptions,1_11,Vowel_descriptions.html,Associate phonetic properties with IPA symbols.
-,Primary Cardinal Vowels,3_1,Primary_Cardinal_Vowels.html,Learn to identify the Primary Cardinal Vowels as spoken by Daniel Jones and Peter Ladefoged.
-,Secondary Cardinal Vowels,3_2,Secondary_Cardinal_Vowels.html,Learn to identify the Secondary Cardinal Vowels as spoken by Daniel Jones and Peter Ladefoged.
-,Saying the Primary CVs,3_4,Saying_the_Primary_CVs.html,Learn to say the Primary Cardinal Vowels.
-,Saying the Secondary CVs,3_5,Saying_the_Secondary_CVs.html,Learn to say the Secondary Cardinal Vowels.
-,MRIs of Cardinal Vowels,3_6,MRIs_of_Cardinal_Vowels.html,See if you can identify Cardinal Vowels from saggital MRI.
-,Transcribe vowels,3_12,Transcribe_vowels.html,Use the IPA to transcribe the vowels in a minimal set in a particular language.
-,IPA Practice: Isolated vowels - 1,3_a,IPA_Isolated_vowels_1.html,"Work with a partner, and practice IPA Production and Transcription."
-,IPA Practice: Isolated vowels - 2,3_b,IPA_Isolated_vowels_2.html,"Work with a partner, and practice IPA Production and Transcription."
-,IPA Practice: Vowels in context,3_c,IPA_Vowels_context.html,"Work with a partner, and practice IPA Production and Transcription."
-,Stop voicing,2_a,Stop_voicing.html,"Work with a partner, and practice IPA Production and Transcription."
-,Consonant voicing,2_b,Consonant_voicing.html,"Work with a partner, and practice IPA Production and Transcription."
-,Review of vocal tract terms,4_1,Review_of_vocal_tract_terms.html,This is a review of the saggital section of the head an terms used to describe sounds.
-,Active and Passive Articulators,4_2,Active_and_Passive_Articulators.html,Review the articulators involved in different places of articulation in the IPA.
-,Place Terms,4_11,Place_Terms.html,Complete the phonetic description.
-,Changing places,4_3,Changing_places.html,What word results from changing the place of articulation?
-,Terms about manner,5_1,Terms_about_manner.html,Review terms and IPA symbols associated with different manners of articulation.
-,Name the manner,5_2,Name_the_manner.html,Manner of articulation for select IPA symbols - and an invitation to say example words with those symbols.
-,IPA for airstream mechanisms,7_1,IPA_for_airstream_mechanisms.html,A review of symbols and terminology.
-,Transcription practice: implosives,7_5,Transcription_practice_implosives.html,Choose the correct transcriptions of the implosives.
-,Transcription practice: clicks,7_6,Transcription_practice_clicks.html,Choose the correct transcriptions of the click sounds .
-,Transcription - secondary articulation,8_7,Transcription_secondary_articulation.html,Choose a phonetic transcription based on listening.
-,IPA Practice: Fricative Place,4_a,IPA_Fricative_Place.html,Practice reading and writing IPA transcription.
-,IPA Practice: Stop Place,4_b,IPA_Stop_Place.html,Practice reading and writing IPA transcription.
-,IPA Practice: Manner,5_a,IPA_Manner_.html,"Work with a partner, and practice IPA production and transcription."
-,IPA Practice: Airstream mechanisms,7_a,IPA_Airstream_mechanisms.html,"Work with a partner, and practice IPA production and transcription."
-,IPA Practice: Complex sounds,8_a,IPA_Complex_sounds.html,"secondary articulation, simultaneous stops, with native speaker models"
-,,,,
+The IPA,Vowel descriptions,1_11,Vowel_descriptions.html,Associate phonetic properties with IPA symbols.
+The IPA,Primary Cardinal Vowels,3_1,Primary_Cardinal_Vowels.html,Learn to identify the Primary Cardinal Vowels as spoken by Daniel Jones and Peter Ladefoged.
+The IPA,Secondary Cardinal Vowels,3_2,Secondary_Cardinal_Vowels.html,Learn to identify the Secondary Cardinal Vowels as spoken by Daniel Jones and Peter Ladefoged.
+The IPA,Saying the Primary CVs,3_4,Saying_the_Primary_CVs.html,Learn to say the Primary Cardinal Vowels.
+The IPA,Saying the Secondary CVs,3_5,Saying_the_Secondary_CVs.html,Learn to say the Secondary Cardinal Vowels.
+The IPA,MRIs of Cardinal Vowels,3_6,MRIs_of_Cardinal_Vowels.html,See if you can identify Cardinal Vowels from saggital MRI.
+The IPA,Transcribe vowels,3_12,Transcribe_vowels.html,Use the IPA to transcribe the vowels in a minimal set in a particular language.
+The IPA,IPA Practice: Isolated vowels - 1,3_a,IPA_Isolated_vowels_1.html,"Work with a partner, and practice IPA Production and Transcription."
+The IPA,IPA Practice: Isolated vowels - 2,3_b,IPA_Isolated_vowels_2.html,"Work with a partner, and practice IPA Production and Transcription."
+The IPA,IPA Practice: Vowels in context,3_c,IPA_Vowels_context.html,"Work with a partner, and practice IPA Production and Transcription."
+The IPA,Stop voicing,2_a,Stop_voicing.html,"Work with a partner, and practice IPA Production and Transcription."
+The IPA,Consonant voicing,2_b,Consonant_voicing.html,"Work with a partner, and practice IPA Production and Transcription."
+The IPA,Review of vocal tract terms,4_1,Review_of_vocal_tract_terms.html,This is a review of the saggital section of the head an terms used to describe sounds.
+The IPA,Active and Passive Articulators,4_2,Active_and_Passive_Articulators.html,Review the articulators involved in different places of articulation in the IPA.
+The IPA,Place Terms,4_11,Place_Terms.html,Complete the phonetic description.
+The IPA,Changing places,4_3,Changing_places.html,What word results from changing the place of articulation?
+The IPA,Terms about manner,5_1,Terms_about_manner.html,Review terms and IPA symbols associated with different manners of articulation.
+The IPA,Name the manner,5_2,Name_the_manner.html,Manner of articulation for select IPA symbols - and an invitation to say example words with those symbols.
+The IPA,IPA for airstream mechanisms,7_1,IPA_for_airstream_mechanisms.html,A review of symbols and terminology.
+The IPA,Transcription practice: implosives,7_5,Transcription_practice_implosives.html,Choose the correct transcriptions of the implosives.
+The IPA,Transcription practice: clicks,7_6,Transcription_practice_clicks.html,Choose the correct transcriptions of the click sounds .
+The IPA,Transcription - secondary articulation,8_7,Transcription_secondary_articulation.html,Choose a phonetic transcription based on listening.
+The IPA,IPA Practice: Fricative Place,4_a,IPA_Fricative_Place.html,Practice reading and writing IPA transcription.
+The IPA,IPA Practice: Stop Place,4_b,IPA_Stop_Place.html,Practice reading and writing IPA transcription.
+The IPA,IPA Practice: Manner,5_a,IPA_Manner_.html,"Work with a partner, and practice IPA production and transcription."
+The IPA,IPA Practice: Airstream mechanisms,7_a,IPA_Airstream_mechanisms.html,"Work with a partner, and practice IPA production and transcription."
+The IPA,IPA Practice: Complex sounds,8_a,IPA_Complex_sounds.html,"secondary articulation, simultaneous stops, with native speaker models"
 Language examples,Polish Fricatives,4_6,Polish_Fricatives.html,Identify the transcribed words of Polish.
-,Mandarin Fricatives,4_7,Mandarin_Fricatives.html,Identify the transcribed words of Mandarin.
-,Malayalam Nasals,4_8,Malayalam_Nasals.html,Identify the transcribed words of Malayalam.
-,Toda Fricatives,4_10,Toda_Fricatives.html,Identify the transcribed words in Toda.
-,Mam place of articulation,4_12,Mam_place_of_articulation.html,"With waveform, spectrogram, and audio - identify the place of articulation."
-,Polish Fricatives - transcription,4_13,Polish_Fricatives_transcription.html,Choose the phonetic transcription.
-,Toda Fricatives - transcription,4_14,Toda_Fricatives_transcription.html,Choose the phonetic transcription.
-,French semi vowels,4_15,Hindi_Stops_transcription.html,Identify French words illustrating different semivowels.
-,Toda rhotics,5_3,French_semi_vowels.html,Identify Toda words illustrating different trills.
-,Hindi Stops - transcription,5_4,Toda_rhotics.html,Choose the phonetic transcription.
-,Sindhi stops,6_1,Sindhi_stops.html,Hearing the stop voicing contrasts.
-,Thai stops,6_2,Thai_stops.html,Hearing the stop voicing contrasts.
-,Korean stops and /s/,6_3,Korean_stops_and_s.html,Hearing the stop voicing contrasts.
-,Armenian stops and affricates,6_4,Armenian_stops_and_affricates.html,Hearing the stop voicing contrasts.
-,Mazatec phonation,6_5,Mazatec_phonation.html,"Hearing the contrast between modal, creaky and breathy voice."
-,Bruu,6_6,Bruu.html,Hearing the contrast between breathy and creaky voice.
-,Nepali,6_8,Nepali_stops.html,Hearing the four-way stop contrast in Nepali.
-,Igbo VOT and implosives,7_2,Igbo_VOT_and_implosives.html,Identify words of Igbo that have constrasting medial stops.
-,Zulu clicks,7_2,Zulu_clicks.html,Identify words of Zulu that illustrate click place and accompaniments.
-,Russian palatalization,8_1,Russian_palatalization.html,Hear a word and identify it from a phonetically transcribed list.
-,Nafaanra place of articulation,8_2,Nafaanra_place_of_articulation.html,"Choose the place of articulation of consonants in Nafaanra, based on audio and spectrograms."
-,Arabic pharyngealization,8_3,Arabic_pharyngealization.html,Hear a word and identify it from a phonetically transcribed list.
-,Bura labialization,8_4,Bura_labialization.html,Hear a word and identify it from a phonetically transcribed list.
-,Ibibio labio-velar stops,8_5,Ibibio_labio_velar_stops.html,Hear a word and identify it from a phonetically transcribed list.
-,,,,
-,,,,
+Language examples,Mandarin Fricatives,4_7,Mandarin_Fricatives.html,Identify the transcribed words of Mandarin.
+Language examples,Malayalam Nasals,4_8,Malayalam_Nasals.html,Identify the transcribed words of Malayalam.
+Language examples,Toda Fricatives,4_10,Toda_Fricatives.html,Identify the transcribed words in Toda.
+Language examples,Mam place of articulation,4_12,Mam_place_of_articulation.html,"With waveform, spectrogram, and audio - identify the place of articulation."
+Language examples,Polish Fricatives - transcription,4_13,Polish_Fricatives_transcription.html,Choose the phonetic transcription.
+Language examples,Toda Fricatives - transcription,4_14,Toda_Fricatives_transcription.html,Choose the phonetic transcription.
+Language examples,French semi vowels,4_15,Hindi_Stops_transcription.html,Identify French words illustrating different semivowels.
+Language examples,Toda rhotics,5_3,French_semi_vowels.html,Identify Toda words illustrating different trills.
+Language examples,Hindi Stops - transcription,5_4,Toda_rhotics.html,Choose the phonetic transcription.
+Language examples,Sindhi stops,6_1,Sindhi_stops.html,Hearing the stop voicing contrasts.
+Language examples,Thai stops,6_2,Thai_stops.html,Hearing the stop voicing contrasts.
+Language examples,Korean stops and /s/,6_3,Korean_stops_and_s.html,Hearing the stop voicing contrasts.
+Language examples,Armenian stops and affricates,6_4,Armenian_stops_and_affricates.html,Hearing the stop voicing contrasts.
+Language examples,Mazatec phonation,6_5,Mazatec_phonation.html,"Hearing the contrast between modal, creaky and breathy voice."
+Language examples,Bruu,6_6,Bruu.html,Hearing the contrast between breathy and creaky voice.
+Language examples,Nepali,6_8,Nepali_stops.html,Hearing the four-way stop contrast in Nepali.
+Language examples,Igbo VOT and implosives,7_2,Igbo_VOT_and_implosives.html,Identify words of Igbo that have constrasting medial stops.
+Language examples,Zulu clicks,7_2,Zulu_clicks.html,Identify words of Zulu that illustrate click place and accompaniments.
+Language examples,Russian palatalization,8_1,Russian_palatalization.html,Hear a word and identify it from a phonetically transcribed list.
+Language examples,Nafaanra place of articulation,8_2,Nafaanra_place_of_articulation.html,"Choose the place of articulation of consonants in Nafaanra, based on audio and spectrograms."
+Language examples,Arabic pharyngealization,8_3,Arabic_pharyngealization.html,Hear a word and identify it from a phonetically transcribed list.
+Language examples,Bura labialization,8_4,Bura_labialization.html,Hear a word and identify it from a phonetically transcribed list.
+Language examples,Ibibio labio-velar stops,8_5,Ibibio_labio_velar_stops.html,Hear a word and identify it from a phonetically transcribed list.
 Acoustic theory of speech production,ten wasps waveform,1_6,ten_wasps_waveform.html,Identify parts of an acoustic waveform.
-,basic acoustics,1_9,basic_acoustics.html,Basic concepts in acoustics.
-,resonance formulas,1_10,resonance_formulas.html,Two key formulas used to calculate resonant frequencies in tubes.
-,Vocal Tract Resonance,3_3,Vocal_Tract_Resonance.html,"Calculate resonant frequencies (F1, F2, F3) in uniform tubes."
-,Formants of [a],3_8,Formants_of_a.html,Calculate F1-3 of a two-tube model of the vocal tract.
-,Formants in two-tube models,3_9,Formants_two_tube_models.html,Calculate F1-3 of a two-tube model of the vocal tract.
-,Perturbation theory,3_10,Perturbation_theory.html,Use the principles of Perturbation theory to predict formant frequencies.
-,Formants in an [i] model,3_11,Formants_an_i_model.html,Calculate F1-3 of a three-tube model of the vocal tract.
-,Nasal consonant acoustics,5_6,Nasal_consonant_acoustics.html,Formants and antiformants in nasal consonants.
-,Spectrogram reading,8_6,Spectrogram_reading.html,Choose a phonetic transcription based on the spectrogram.
-,,,,
+Acoustic theory of speech production,basic acoustics,1_9,basic_acoustics.html,Basic concepts in acoustics.
+Acoustic theory of speech production,resonance formulas,1_10,resonance_formulas.html,Two key formulas used to calculate resonant frequencies in tubes.
+Acoustic theory of speech production,Vocal Tract Resonance,3_3,Vocal_Tract_Resonance.html,"Calculate resonant frequencies (F1, F2, F3) in uniform tubes."
+Acoustic theory of speech production,Formants of [a],3_8,Formants_of_a.html,Calculate F1-3 of a two-tube model of the vocal tract.
+Acoustic theory of speech production,Formants in two-tube models,3_9,Formants_two_tube_models.html,Calculate F1-3 of a two-tube model of the vocal tract.
+Acoustic theory of speech production,Perturbation theory,3_10,Perturbation_theory.html,Use the principles of Perturbation theory to predict formant frequencies.
+Acoustic theory of speech production,Formants in an [i] model,3_11,Formants_an_i_model.html,Calculate F1-3 of a three-tube model of the vocal tract.
+Acoustic theory of speech production,Nasal consonant acoustics,5_6,Nasal_consonant_acoustics.html,Formants and antiformants in nasal consonants.
+Acoustic theory of speech production,Spectrogram reading,8_6,Spectrogram_reading.html,Choose a phonetic transcription based on the spectrogram.
 Prosody,"Yuxi - tone 2, tone 5",6_7,Yuxi_tone_2_tone_5.html,Can you hear a difference between two tones in Yuxi?
-,Quantity in Italian,9_1,Quantity_Italian.html,Hearing differences in vowel and consonant length differences.
-,Quantity in Icelandic,9_2,Quantity_Icelandic.html,Hearing vowel and consonant length differences (and preaspiration!).
-,Tone in Ibibio,9_3,Tone_Ibibio.html,"Hearing pitch patterns in H, L, and Falling tones."
-,Cantonese Tones,9_4,Cantonese_Tones.html,Hearing the six tones of Cantonese.
-,Tone in Thai,9_5,Tone_Thai.html,Hearing the five tones of Thai.
-,Hmong tones,9_6,Hmong_tones.html,Hearing tone in Hmong - phonation and pitch are cues.
-,,,,
-,,,,
+Prosody,Quantity in Italian,9_1,Quantity_Italian.html,Hearing differences in vowel and consonant length differences.
+Prosody,Quantity in Icelandic,9_2,Quantity_Icelandic.html,Hearing vowel and consonant length differences (and preaspiration!).
+Prosody,Tone in Ibibio,9_3,Tone_Ibibio.html,"Hearing pitch patterns in H, L, and Falling tones."
+Prosody,Cantonese Tones,9_4,Cantonese_Tones.html,Hearing the six tones of Cantonese.
+Prosody,Tone in Thai,9_5,Tone_Thai.html,Hearing the five tones of Thai.
+Prosody,Hmong tones,9_6,Hmong_tones.html,Hearing tone in Hmong - phonation and pitch are cues.
 Articulatory Phonology,Laryngeal Anatomy,2_1,Laryngeal_Anatomy.html,"The muscles and cartilages of the larynx, and the adduction and abduction of the vocal folds."
-,Vowel Muscles,3_7,Vowel_Muscles.html,Review of (some of the) muscles involved in vowel production.
-,Intrinsic tongue muscles - sagittal,4_4,Intrinsic_tongue_muscles_sagittal.html,Identify the intrinsic tongue muscles in a mid-sagittal section of the vocal tract.
-,Intrinsic tongue muscles - coronal,4_5,Intrinsic_tongue_muscles_coronal.html,Identify the intrinsic tongue muscles in a coronal section of the vocal tract.
-,MRI images of voiceless fricatives,4_9,MRI_images_of_voiceless_fricatives.html,Identify the place of articulation of voiceless fricatives from MRI images.
-,Infrahyoid muscles,7_4,Infrahyoid_muscles.html,Muscles below the hyoid that are involved in pulling the hyoid bone down.
-,Guess the word - sagittal view,10_1,Guess_the_word_sagittal_view.html,Based on X-ray microbeam data - can you guess the word?.
-,Guess the word - time traces,10_2,Guess_the_word_time_traces.html,Based on X-ray microbeam data - can you guess the word?.
-,,,,
-,,,,
+Articulatory Phonology,Vowel Muscles,3_7,Vowel_Muscles.html,Review of (some of the) muscles involved in vowel production.
+Articulatory Phonology,Intrinsic tongue muscles - sagittal,4_4,Intrinsic_tongue_muscles_sagittal.html,Identify the intrinsic tongue muscles in a mid-sagittal section of the vocal tract.
+Articulatory Phonology,Intrinsic tongue muscles - coronal,4_5,Intrinsic_tongue_muscles_coronal.html,Identify the intrinsic tongue muscles in a coronal section of the vocal tract.
+Articulatory Phonology,MRI images of voiceless fricatives,4_9,MRI_images_of_voiceless_fricatives.html,Identify the place of articulation of voiceless fricatives from MRI images.
+Articulatory Phonology,Infrahyoid muscles,7_4,Infrahyoid_muscles.html,Muscles below the hyoid that are involved in pulling the hyoid bone down.
+Articulatory Phonology,Guess the word - sagittal view,10_1,Guess_the_word_sagittal_view.html,Based on X-ray microbeam data - can you guess the word?.
+Articulatory Phonology,Guess the word - time traces,10_2,Guess_the_word_time_traces.html,Based on X-ray microbeam data - can you guess the word?.
 Aerodynamics,The myoelestic aerodynamic theory,2_2,The_myoelestic_aerodynamic_theory.html,Modeling of the muscular-elastic and aerodynamic forces that are involved in phonation.
-,Using aerodynamic formulas,5_5,Using_aerodynamic_formulas.html,Practice using key formulas to calculate aerodynamic properties of speech.
-,,,,
+Aerodynamics,Using aerodynamic formulas,5_5,Using_aerodynamic_formulas.html,Practice using key formulas to calculate aerodynamic properties of speech.

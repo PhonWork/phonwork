@@ -2,7 +2,7 @@ import re, glob, os
 import pandas as pd
 
 #CSV maps Old ID system to their new URLs (and convert .html to .js)
-df = pd.read_csv("nametourl.csv", index_col=1)  
+df = pd.read_csv("nametourl.csv", index_col=2)  
 df.Url = df.Url.replace(r'(.+)\.html', r'\1.js',regex=True)
  
 #JS Exercises Directory

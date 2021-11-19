@@ -1,6 +1,6 @@
 import re, glob, os
 import pandas as pd
-df = pd.read_csv("nametourl.csv", index_col=1)
+df = pd.read_csv("nametourl.csv", index_col=2)
 
 os.chdir("../old_phonwork")
 files = [f for f in os.listdir('.') if re.match(r'^ex[0-9_]+\.php', f)]
