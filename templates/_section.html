@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Phonwork - {{ title|e }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      
+    {% include '_header.html' %}
+      
+    {% include '_menu.html' %}
+    <!-- Main -->
+    <div id="main">
+	<div class="inner">
+	  <h1>{{ title|e }}</h1>
+	  <span class="image main"><img src="images/{{ image }}" alt="" /></span>
+	  <p>{{ description|e }}</p>
+	  
+	  <!-- Table -->
+	  <section>
+	    <div class="table-wrapper">
+	      <table>
+		    <thead> <tr><th>Exercise</th><th>Description</th></tr> </thead>
+		    <tbody>
+		     {% for item in pages %}
+             <tr><td><a href="{{ item['Url']|e }}">{{ item["Name"]|e }}</a></td><td>{{ item["Description"]|e }}</td></tr>
+			 {% endfor %}
+		    </tbody>
+          </table>
+	    </div>      
+	  </section>
+	  
+	</div>
+    </div>
+      
+    {% include '_footer.html' %}
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
