@@ -49,7 +49,8 @@ Many of the media files used in PhonWork are licensed with different copyright r
 To fix this, run
 
 ```bash
-git submodule update```
+git submodule update
+```
 
 ## Viewing the site
 
