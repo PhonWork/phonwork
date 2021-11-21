@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -32,7 +32,7 @@
 	<h1>3.9 Formants in two-tube models</h1>
 
 
-	 <span class="image fit"><img src="images/ex/a_tube.png" width="400px"></span>
+	 <span class="image fit"><img src="media/images/ex/a_tube.png" width="400px"></span>
 
 	 <p>For this exercise assume that <i>l<sub>b</sub></i> is 8.5 cm and the overall length of the vocal tract (L) is 16 cm and that the speed of sound is 35,000 cm/sec (a calculator may be useful).</p>
 	<p><span id="question"></span>

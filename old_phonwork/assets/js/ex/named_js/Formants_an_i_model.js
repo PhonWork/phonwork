@@ -2,7 +2,7 @@
 
 exerciseName = "Formants in an [i] model";
 mincorrect=8;
-minrun=1;
+minrun=3;
 
 quest[0] = "What is the frequency of the Helmholz resonator?"
 quest[1] = "What is the frequency of the first resonance of the back cavity?"
@@ -13,7 +13,7 @@ quest[5] = "What is the frequency of the first resonance of this vocal tract?"
 quest[6] = "What is the frequency of the second resonance of this vocal tract?"
 quest[7] = "What is the frequency of the third resonance of this vocal tract?"
 
-answer[0] = "300";
+answer[0] = "302";
 answer[1] = "2059";
 answer[2] = "6176";
 answer[3] = "2500";

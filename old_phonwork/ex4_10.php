@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -33,7 +33,7 @@
 
 	<p>Type the English gloss of the word you hear.</p>
 
-	<span class="image fit"><img src="images/ex/toda_fricatives.gif" width="400px"></span>
+	<span class="image fit"><img src="media/images/ex/toda_fricatives.gif" width="400px"></span>
 
 <p><input id="audio_questions" type="button" onclick="document.getElementById('theaudio').play();document.getElementById('answerbox').focus();" value="play"></p>
 

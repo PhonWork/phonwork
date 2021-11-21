@@ -18,7 +18,7 @@
 	<div class="inner">  
 	  <!-- Logo -->
 	  <a href="index.php" class="logo">
-	    <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	    <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	    <span class="title">Phonwork</span>
 	  </a>
 	  <!-- Nav -->
@@ -32,7 +32,7 @@
       <div id="main">
 	<div class="inner">
 	  <h1>Introductory material</h1>
-	  <span class="image main"><img src="images/intro_horiz.png" alt="" /></span>
+	  <span class="image main"><img src="media/images/intro_horiz.png" alt="" /></span>
 	  <p>Exercises on some of the basic terminology used describing the sounds of language, and some of the mechanisms used to produce speech.
 	  </p>
 	  

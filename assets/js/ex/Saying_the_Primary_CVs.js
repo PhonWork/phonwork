@@ -9,8 +9,9 @@ var n = 8;
 for (var i=0; i<n; i++) {
     token = i+1;
 
-    soundfiles2[i]=namebase+"i"+token.toString();    answer[i]="yes";  quest[i]=token.toString();
-    soundfiles2[i+n]=namebase+"dj"+token.toString();    answer[i+n]="yes"; quest[i+n] = token.toString();
+    soundfiles2[i]=namebase+"jones1_"+token.toString();    answer[i]="yes";  quest[i]=token.toString();
+    soundfiles2[i+n]=namebase+"jones2_"+token.toString();    answer[i+n]="yes"; quest[i+n] = token.toString();
+    soundfiles2[i+n]=namebase+"Jones3_"+token.toString();    answer[i+n]="yes"; quest[i+n] = token.toString();
 }
 
 

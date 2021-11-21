@@ -44,7 +44,7 @@ function test_for_local_storage() {
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->

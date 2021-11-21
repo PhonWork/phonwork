@@ -19,9 +19,9 @@ soundfiles[7] = namebase + "taaraa";
 soundfiles[8] = namebase + "thaal";
 
 answer[0] = "lentils";
-answer[1] = "rice (in paddy/unhusked/uncooked)";
+answer[1] = "rice";
 answer[2] = "milk";
-answer[3] = "chit chat (n.)";
+answer[3] = "chit chat";
 answer[4] = "house";
 answer[5] = "work";
 answer[6] = "envelope";

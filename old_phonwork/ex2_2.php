@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -33,7 +33,7 @@
 
 	<p>The figure below shows six frames in a cross-sectional movie of one cycle of vocal fold vibration, starting at frame 1 and ending at frame 6.  For each question, choose one frame as the point in the vibration cycle where this statement is most likely to be true.</p>
 
-	<span class="image fit"><img src="images/ex/myoelastic_aerodynamic_figure.png" width="400px"></span>
+	<span class="image fit"><img src="media/images/ex/myoelastic_aerodynamic_figure.png" width="400px"></span>
 
 	<p><span id="question"></span>
 	  <input id="answerbox" type="text" onkeydown="if (event.keyCode == 13) check_answer()" placeholder="type answer here">

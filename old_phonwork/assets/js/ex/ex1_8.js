@@ -4,7 +4,7 @@ exerciseName = "Backward syllable counting";
 mincorrect=9;
 minrun=3;
 
-var namebase="sounds/backwards/"
+var namebase="media/sounds/backwards/"
 
 soundfiles[0]=namebase+"another_r"; soundfiles2[0]=namebase+"another"; answer[0]="3";
 soundfiles[1]=namebase+"boistrous_r"; soundfiles2[1]=namebase+"boistrous"; answer[1]="2";

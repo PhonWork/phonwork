@@ -1,9 +1,8 @@
 // must assume the existence of some variables (defined in exercises.js)
 
 exerciseName = "Arabic pharyngealization";
-mincorrect=28;
+mincorrect=24;
 minrun=3;
-n = 28;
 debug=1;
 
 var namebase="media/sounds/arabic/a"; // files are lg/lg1.wav, etc

@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">PhonWork</span>
 	</a>
 	<!-- Nav -->
@@ -48,7 +48,7 @@
 	
 	<section class="tiles">
 	  <article class="style1">
-	    <span class="image"><img src="images/VisSpeechCons-01.png" alt="" /></span>
+	    <span class="image"><img src="media/images/VisSpeechCons-01.png" alt="" /></span>
 	    <a href="intro.php">
 	      <h2>Intro</h2>
 	      <div class="content">
@@ -58,7 +58,7 @@
 	  </article>
 	  
 	  <article class="style2">
-	    <span class="image"><img src="images/top_view_larynx.png" alt="" /></span>
+	    <span class="image"><img src="media/images/top_view_larynx.png" alt="" /></span>
 	    <a href="voice.php">
 	      <h2>Voice</h2>
 	      <div class="content">
@@ -68,7 +68,7 @@
 	  </article>
 	  
 	  <article class="style3">
-	    <span class="image"><img src="images/ipa_vowels.png" alt="" /></span>
+	    <span class="image"><img src="media/images/ipa_vowels.png" alt="" /></span>
 	    <a href="vowels.php">
 	      <h2>Vowels</h2>
 	      <div class="content">
@@ -78,7 +78,7 @@
 	  </article>
 
 	  <article class="style4">
-	    <span class="image"><img src="images/A_M_Fig3_1.png" alt="" /></span>
+	    <span class="image"><img src="media/images/A_M_Fig3_1.png" alt="" /></span>
 	    <a href="place.php">
 	      <h2>Place of articulation</h2>
 	      <div class="content">
@@ -88,7 +88,7 @@
 	  </article>
 	  
 	  <article class="style5">
-	    <span class="image"><img src="images/pistons_and_valves.png" alt="" /></span>
+	    <span class="image"><img src="media/images/pistons_and_valves.png" alt="" /></span>
 	    <a href="manner.php">
 	      <h2>Manner of articulation</h2>
 	      <div class="content">
@@ -98,7 +98,7 @@
 	  </article>
 	  
 	  <article class="style6">
-	    <span class="image"><img src="images/egg_stroboscope-01.png" alt="" /></span>
+	    <span class="image"><img src="media/images/egg_stroboscope-01.png" alt="" /></span>
 	    <a href="voice2.php">
 	      <h2>Phonation</h2>
 	      <div class="content">
@@ -108,7 +108,7 @@
 	  </article>
 	  
 	  <article class="style2">
-	    <span class="image"><img src="images/extrinsic_laryngeal_muscles-01.png" alt="" /></span>
+	    <span class="image"><img src="media/images/extrinsic_laryngeal_muscles-01.png" alt="" /></span>
 	    <a href="airstream.php">
 	      <h2>Airstream mechanisms</h2>
 	      <div class="content">
@@ -118,7 +118,7 @@
 	  </article>
 	  
 	  <article class="style3">
-	    <span class="image"><img src="images/acoustic_demo.png" alt="" /></span>
+	    <span class="image"><img src="media/images/acoustic_demo.png" alt="" /></span>
 	    <a href="complex.php">
 	      <h2>Complex sounds</h2>
 	      <div class="content">
@@ -128,7 +128,7 @@
 	  </article>
 	  
 	  <article class="style1">
-	    <span class="image"><img src="images/pic09.jpg" alt="" /></span>
+	    <span class="image"><img src="media/images/pic09.jpg" alt="" /></span>
 	    <a href="prosody.php">
 	      <h2>Prosody</h2>
 	      <div class="content">
@@ -138,7 +138,7 @@
 	  </article>
 	  
 	  <article class="style5">
-	    <span class="image"><img src="images/guess.png" alt="" /></span>
+	    <span class="image"><img src="media/images/guess.png" alt="" /></span>
 	    <a href="motor.php">
 	      <h2>Speech motor control</h2>
 	      <div class="content">
@@ -148,7 +148,7 @@
 	  </article>
 	  
 	  <article class="style6">
-	    <span class="image"><img src="images/pic11.jpg" alt="" /></span>
+	    <span class="image"><img src="media/images/pic11.jpg" alt="" /></span>
 	    <a href="phonology.php">
 	      <h2>Phonology</h2>
 	      <div class="content">
@@ -158,7 +158,7 @@
 	  </article>
 	  
 	  <article class="style4">
-	    <span class="image"><img src="images/pic12.jpg" alt="" /></span>
+	    <span class="image"><img src="media/images/pic12.jpg" alt="" /></span>
 	    <a href="perception.php">
 	      <h2>Speech perception</h2>
 	      <div class="content">

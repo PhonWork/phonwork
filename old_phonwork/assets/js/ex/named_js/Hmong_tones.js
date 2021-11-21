@@ -5,7 +5,7 @@ mincorrect=10;
 minrun=3;
 var n=7;
 
-var namebase="sounds/hmong/h";
+var namebase="media/sounds/hmong/h";
 
 for (var i=0; i<n; i++) {
     token = i+1;

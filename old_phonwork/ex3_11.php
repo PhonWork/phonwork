@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -32,7 +32,7 @@
 	<h1>3.11 Formants in an [i] model</h1>
 
 
-	 <span class="image fit"><img src="images/ex/i_tube.png" width="400px"></span>
+	 <span class="image fit"><img src="media/images/ex/i_tube.png" width="400px"></span>
 
 	 <p>For this exercise assume:  
 <i>l<sub>b</sub></i> = 8.5 cm, 

@@ -4,11 +4,11 @@ exerciseName = "Complex sounds: spectrogram reading";
 minrun=20;
 debug=1;
 
-var russia_base="sounds/russian/r";
-var arabic_base="sounds/arabic/a";
-var chinatec_base="sounds/chinatec/c";
-var bura_base="sounds/bura/b";
-var ibibio_base="sounds/ibibio/i";
+var russia_base="media/sounds/russian/r";
+var arabic_base="media/sounds/arabic/a";
+var chinatec_base="media/sounds/chinatec/c";
+var bura_base="media/sounds/bura/b";
+var ibibio_base="media/sounds/ibibio/i";
 
 soundfiles2[0]=arabic_base+"1";     quest[0]="a) [tiːn] or b) [tˤiːn]";  answer[0] = "a";
 soundfiles2[1]=arabic_base+"2";     quest[1]="a) [tiːn] or b) [tˤiːn]";  answer[1] = "b";

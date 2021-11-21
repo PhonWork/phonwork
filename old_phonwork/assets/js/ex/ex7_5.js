@@ -5,7 +5,7 @@ mincorrect=11;
 minrun=3;
 debug=1;
 
-var namebase="sounds/igbo/igbo"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/igbo/igbo"; // files are lg/lg1.wav, etc
 
 soundfiles[0] = namebase+'4';
 soundfiles[1] = namebase+'1';

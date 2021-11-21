@@ -6,7 +6,7 @@ minrun=3;
 n = 6;
 debug=1;
 
-var namebase="sounds/ibibio/ib"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/ibibio/ib"; // files are lg/lg1.wav, etc
 
 for (var i=0; i<n; i++) {
     token = i+1;

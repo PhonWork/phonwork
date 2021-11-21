@@ -22,7 +22,7 @@ soundfiles[10] =namebase+"h3"; answer[10] = "b";
 soundfiles[11] =namebase+"h7"; answer[11] = "d";
 soundfiles[12] =namebase+"h11"; answer[12] = "ɖ";
 soundfiles[13] =namebase+"h15"; answer[13] = "d̠ʒ";
-soundfiles[14] =namebase+"h719"; answer[14] = "g";
+soundfiles[14] =namebase+"h19"; answer[14] = "ɡ";
 
 soundfiles[15] =namebase+"h4"; answer[15] = "bʱ";
 soundfiles[16] =namebase+"h8"; answer[16] = "dʱ";

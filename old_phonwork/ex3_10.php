@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -32,7 +32,7 @@
 	<h1>3.10 Perturbation Theory</h1>
 
 
-	 <span class="image fit"><img src="images/ex/F2_standing_wave.png" width="400px"></span>
+	 <span class="image fit"><img src="media/images/ex/F2_standing_wave.png" width="400px"></span>
 
 	 <p>For this exercise assume that the overall length of the vocal tract (L) is 17.5 cm.</p>
 	<p><span id="question"></span>

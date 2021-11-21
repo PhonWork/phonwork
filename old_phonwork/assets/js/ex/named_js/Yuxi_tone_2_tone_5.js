@@ -6,14 +6,14 @@ minrun=5;
 debug=1
 
 
-var namebase="sounds/yuxi/szh_";
+var namebase="media/sounds/yuxi/szh_";
 var br = "breathy_t2_";
 var mod = "modal_t5_";
 
 soundfiles[0] = namebase + br+ "ka_1";
 soundfiles[1] = namebase + br+ "ka_2";
 soundfiles[2] = namebase + br+ "pa_1";
-soundfiles[3] = namebase + br+ "pa_2";
+soundfiles[3] = namebase + br+ "pa_2-1";
 soundfiles[4] = namebase + br+ "pu_1";
 soundfiles[5] = namebase + br+ "pu_2";
 soundfiles[6] = namebase + br+ "ti_1";

@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -33,7 +33,7 @@
 
 <p>Bura is an Afro-Asiatic language of the Chadic family (Biu-Mandara branch) spoken by approximately 250,000 people in Nigeria. The two major dialects are Pela (Hill Bura) and Hyilhawul (Plain Bura).</p>
 
-	<span class="image fit"><img src="sounds/bura/bura.gif" width="400px"></span>
+	<span class="image fit"><img src="media/sounds/bura/bura.gif" width="400px"></span>
 
 	<p>What Bura word is this?</p>
 

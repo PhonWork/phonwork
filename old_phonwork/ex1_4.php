@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -30,7 +30,7 @@
     <div id="main">
       <div class="inner">
 	<h1>Alexander Melville Bell's 'visible speech' phonetic alphabet</h1>
-	<span class="image fit"><img src="images/ex/VisSpeech_saggital.png" width="60%"></span>
+	<span class="image fit"><img src="media/images/ex/VisSpeech_saggital.png" width="60%"></span>
 	<p>The father of AG Bell (inventor of the telephone) devised a phonetic
 	  alphabet.  Bell's Visible Speech is an 'iconic' phonetic
 	  alphabet, which means that the letters have visual elements
@@ -38,7 +38,7 @@
 	  elements of the symbols are illustrated above, and a consonant chart for
 	  English is shown below.</p>
 
-	<span class="image fit"><img src="images/ex/VisSpeech_cons_chart650.png" width="100%"></span>
+	<span class="image fit"><img src="media/images/ex/VisSpeech_cons_chart650.png" width="100%"></span>
 
 	<p> What IPA symbol corresponds to this Visible Speech symbol?<br> <span id="question"></span>
 

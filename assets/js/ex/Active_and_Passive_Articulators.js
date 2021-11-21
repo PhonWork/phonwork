@@ -16,6 +16,6 @@ quest[8]="passive articulator of palatal sounds?"; answer[8]="hard palate";
 quest[9]="passive articulator of [k]?"; answer[9]="soft palate|velum";
 quest[10]="passive articulator of [ħ]?"; answer[10]="pharynx|back wall of the pharynx";
 quest[11]="passive articulator of glottal soudns?"; answer[11]="nothing|none";
-quest[12]="active articulator of pharyngeal sounds?"; answer[12]="tongue root";
+quest[12]="active articulator of pharyngeal sounds?"; answer[12]="tongue root|root";
 
 

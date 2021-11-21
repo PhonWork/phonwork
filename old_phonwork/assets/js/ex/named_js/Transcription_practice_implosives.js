@@ -1,11 +1,11 @@
 // must assume the existence of some variables (defined in exercises.js)
 
-exerciseName = "Igbo VOT and Implosives";
+exerciseName = "Transcribing Igbo VOT and Implosives";
 mincorrect=11;
 minrun=3;
 debug=1;
 
-var namebase="sounds/igbo/igbo"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/igbo/igbo"; // files are lg/lg1.wav, etc
 
 soundfiles[0] = namebase+'4';
 soundfiles[1] = namebase+'1';
@@ -19,17 +19,17 @@ soundfiles[8] = namebase+'23';
 soundfiles[9] = namebase+'25';
 soundfiles[10] = namebase+'22';
 
-answer[0] = "to get rich";
-answer[1] = "to carry";
-answer[2] = "to squeeze";
-answer[3] = "to peel";
-answer[4] = "to gather";
-answer[5] = "to dance";
-answer[6] = "to cut";
-answer[7] = "[name]";
-answer[8] = "to blame";
-answer[9] = "to fall";
-answer[10] = "to chew";
+answer[0] = "b";
+answer[1] = "p";
+answer[2] = "pʰ";
+answer[3] = "bʱ";
+answer[4] = "ɓ̥";
+answer[5] = "ɓ";
+answer[6] = "d";
+answer[7] = "t";
+answer[8] = "tʰ";
+answer[9] = "dʱ";
+answer[10] = "ɗ̥";
 
 
 

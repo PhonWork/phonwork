@@ -3,7 +3,7 @@
 exerciseName = "Polish Fricatives - transcription";
 mincorrect=10;
 minrun=3;
-var namebase="sounds/polish/"
+var namebase="media/sounds/polish/"
 
 
 soundfiles[0] =namebase+"p101"; answer[0] = "s";

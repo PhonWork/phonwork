@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -31,7 +31,7 @@
       <div class="inner">
 	<h1>Transcribe vowels</h1>
 
-	<span class="image fit"><img src="images/vowels.gif" width="400px"></span>
+	<span class="image fit"><img src="media/images/vowels.gif" width="400px"></span>
 
 	<p>Click "play" to hear a vowel.  How do you transcribe it? <br /> (Enter the IPA transcription of the vowel, in square brackets)</p>
 

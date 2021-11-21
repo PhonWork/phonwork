@@ -7,7 +7,7 @@ debug = 0;
 var n=11;
 var numstart = 12
 
-var namebase="sounds/toda/t";  // files are sindhi/sindhi1.wav, etc
+var namebase="media/sounds/toda/t";  // files are sindhi/sindhi1.wav, etc
 
 for (var i=0; i<n; i++) {
     token = numstart + i;

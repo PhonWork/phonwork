@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -31,7 +31,7 @@
       <div class="inner">
 	<h1>The Primary Cardinal Vowels</h1>
 
-	<span class="image fit"><img src="images/ex/primary.png" width="400px"></span>
+	<span class="image fit"><img src="media/images/ex/primary.png" width="400px"></span>
 
 	<p>The primary cardinal vowels are numbered from 1 to 8, as in the figure.  Listen to the sound and 
 decide which cardinal vowel it is.  Enter the number as your answer.</p>

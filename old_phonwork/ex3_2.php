@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -31,7 +31,7 @@
       <div class="inner">
 	<h1>The Secondary Cardinal Vowels</h1>
 
-	<span class="image fit"><img src="images/ex/secondary.png" width="400px"></span>
+	<span class="image fit"><img src="media/images/ex/secondary.png" width="400px"></span>
 
 	<p>The secondary cardinal vowels are numbered from 9 to 18, as in the figure.  Listen to the sound and 
 decide which cardinal vowel it is.  Enter the number as your answer.</p>

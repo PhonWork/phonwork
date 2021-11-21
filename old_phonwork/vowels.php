@@ -18,7 +18,7 @@
 	<div class="inner">  
 	  <!-- Logo -->
 	  <a href="index.php" class="logo">
-	    <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	    <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	    <span class="title">Phonwork</span>
 	  </a>
 	  <!-- Nav -->
@@ -32,7 +32,7 @@
       <div id="main">
 	<div class="inner">
 	  <h1>Vowels</h1>
-	  <span class="image main"><img src="images/dj3.png" alt="" /></span>
+	  <span class="image main"><img src="media/images/dj3.png" alt="" /></span>
 	  <p>Exercises on vowel transcription, production, and acoustics.aka vocal fold vibration.</p>
 	  
 	  <!-- Table -->

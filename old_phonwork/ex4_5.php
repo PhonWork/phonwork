@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -33,7 +33,7 @@
 
 	<p>The figure below shows the intrinsic muscles of the tongue in a coronal view (Figure 9.2, Gick et al., 2013). The little insert figure at the bottom shows in a saggital view where the coronal slice was taken.  Answer the following questions with the letters labelled (a) - (h) in the figure.</p>
 
-	<span class="image fit"><img src="images/ex/intrinsic_coronal.png" width="400px"></span>
+	<span class="image fit"><img src="media/images/ex/intrinsic_coronal.png" width="400px"></span>
 
 	<p>Which letter shows: <span id="question"></span>
 	  <input id="answerbox" type="text" onkeydown="if (event.keyCode == 13) check_answer()" placeholder="type answer here">

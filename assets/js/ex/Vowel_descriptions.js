@@ -1,29 +1,33 @@
 // must assume the existence of some variables (defined in exercises.js)
 
-exerciseName = "Consonant descriptions";
-mincorrect=20;
+exerciseName = "Vowel descriptions";
+mincorrect=24;
 minrun=3;
 
-quest[0]="[s] place of articulation"; answer[0]="alveolar";
-quest[1]="[s] degree of constriction"; answer[1]="fricative";
-quest[2]="[s] voicing"; answer[2]="voiceless";
-quest[3]="[k] place of articulation"; answer[3]="velar";
-quest[4]="[k] degree of constriction"; answer[4]="plosive|stop";
-quest[5]="[k] voicing"; answer[5]="voiceless";
-quest[6]="[k] nasality"; answer[6]="oral";
-quest[7]="[k] laterality"; answer[7]="central";
-quest[8]="[n] place of articulation"; answer[8]="alveolar";
-quest[9]="[n] degree of constriction"; answer[9]="plosive|stop";
-quest[10]="[n] voicing"; answer[10]="voiced";
-quest[11]="[n] nasality"; answer[11]="nasal";
-quest[12]="[f] place of articulation"; answer[12]="labiodental";
-quest[13]="[f] degree of constriction"; answer[13]="fricative";
-quest[14]="[f] voicing"; answer[14]="voiceless";
-quest[15]="[l] place of articulation"; answer[15]="alveolar";
-quest[16]="[l] degree of constriction"; answer[16]="approximant";
-quest[17]="[l] voicing"; answer[17]="voiced";
-quest[18]="[l] laterality"; answer[18]="lateral";
-quest[19]="[t] place of articulation"; answer[19]="alveolar";
-quest[20]="[t] degree of constriction"; answer[20]="plosive|stop";
-quest[21]="[t] voicing"; answer[21]="voiceless";
-quest[22]="[t] nasality"; answer[22]="oral";
+quest[0]="[i] height"; answer[0]="close|high";
+quest[1]="[u] height"; answer[1]="close|high";
+quest[2]="[ɨ] height"; answer[2]="close|high";
+quest[3]="[y] height"; answer[3]="close|high";
+quest[4]="[e] height"; answer[4]="close-mid|mid-high|mid";
+quest[5]="[o] height"; answer[5]="close-mid|mid-high|mid";
+quest[6]="[ɛ] height"; answer[6]="open-mid|mid-low|mid";
+quest[7]="[ø] height"; answer[7]="close-mid|mid-high|mid";
+quest[8]="[æ] height"; answer[8]="open|low";
+quest[9]="[ɑ] height"; answer[9]="open|low";
+quest[10]="[ɑ] frontness"; answer[10]="back";
+quest[11]="[o] frontness"; answer[11]="back";
+quest[12]="[u] frontness"; answer[12]="back";
+quest[13]="[ɔ] frontness"; answer[13]="back";
+quest[14]="[i] frontness"; answer[14]="front";
+quest[15]="[e] frontness"; answer[15]="front";
+quest[16]="[æ] frontness"; answer[16]="front";
+quest[17]="[ə] frontness"; answer[17]="central";
+quest[18]="[oᶷ] complexity"; answer[18]="diphthong";
+quest[19]="[eᶦ] complexity"; answer[19]="diphthong";
+quest[20]="[ɑ] complexity"; answer[20]="monophthong";
+quest[21]="[æ] complexity"; answer[21]="monophthong";
+quest[22]="[i] tenseness"; answer[22]="tense";
+quest[23]="[eᶦ] tenseness"; answer[23]="tense";
+quest[24]="[ɛ] tenseness"; answer[24]="lax";
+quest[25]="[ʊ] tenseness"; answer[25]="lax";
+

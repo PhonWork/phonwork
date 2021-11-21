@@ -133,3 +133,9 @@ if __name__ == '__main__':
         section_df = df.loc[section]
         #print(section_df)
         make_indices(sectionlayout, section_df, cfg, templatedir, sitedir)
+        
+        
+        
+        
+        
+        

@@ -6,7 +6,7 @@ minrun=3;
 n = 26;
 debug=1;
 
-var namebase="sounds/russian/r"; // files are lg/lg1.wav, etc
+var namebase="media/sounds/russian/r"; // files are lg/lg1.wav, etc
 
 for (var i=0; i<n; i++) {
     token = i+1;

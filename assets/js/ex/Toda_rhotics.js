@@ -17,13 +17,13 @@ answer[0] = "border";
 answer[1] = "juice";
 answer[2] = "calf pen";
 answer[3] = "knife";
-answer[4] = "bunch of leaves";
+answer[4] = "bunch of leaves|leaves";
 answer[5] = "beating";
 answer[6] = "throw";
-answer[7] = "male buffalo";
+answer[7] = "male buffalo|buffalo";
 answer[8] = "lap";
 answer[9] = "fate";
-answer[10]= "day after new moon";
+answer[10]= "day after new moon|day";
 
 
 

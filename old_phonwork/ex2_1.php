@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -33,7 +33,7 @@
 
 	<p>The figure below is of the cartilages and muscles of the larynx. Answer the following questions with the letters labelled (a) - (j) in the figure.</p>
 
-	<span class="image fit"><img src="images/ex/larynx_letter_labels.png" width="400px"></span>
+	<span class="image fit"><img src="media/images/ex/larynx_letter_labels.png" width="400px"></span>
 
 	<p>Which letter marks this: <span id="question"></span>
 	  <input id="answerbox" type="text" onkeydown="if (event.keyCode == 13) check_answer()" placeholder="type answer here">

@@ -6,7 +6,7 @@ minrun=5;
 debug=1
 
 
-var namebase="sounds/yuxi/szh_";
+var namebase="media/sounds/yuxi/szh_";
 var br = "breathy_t2_";
 var mod = "modal_t5_";
 

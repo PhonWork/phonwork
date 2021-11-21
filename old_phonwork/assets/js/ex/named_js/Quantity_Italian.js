@@ -4,7 +4,7 @@ exerciseName = "Quantity in Italian";
 mincorrect=10;
 minrun=3;
 
-var namebase="sounds/italian/i";
+var namebase="media/sounds/italian/i";
 soundfiles[0] = namebase+"11";
 soundfiles[1] = namebase+"2";
 soundfiles[2] = namebase+"19";

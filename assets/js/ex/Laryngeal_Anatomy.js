@@ -15,6 +15,6 @@ quest[7]="tensed in vocal fold adduction"; answer[7]="e|g|h|c|b";
 quest[8]="tensed in vocal fold abduction"; answer[8]="j";
 quest[9]="the last ring of the trachea"; answer[9]="d";
 quest[10]="folds down to cover the glottis in swallowing"; answer[10]="a";
-quest[11]="one of the cartilages that the vocal folds attaches to"; answer[7]="f|i";
+quest[11]="one of the cartilages that the vocal folds attaches to"; answer[11]="f|i";
 
 

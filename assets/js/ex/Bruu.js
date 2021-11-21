@@ -12,9 +12,9 @@ for (var i=0; i<n; i++) {
     soundfiles[i] = namebase+token.toString();
 }
 answer[0] = "fear of crowds";
-answer[1] = "sharpen a knife";
+answer[1] = "sharpen of knife";
 answer[2] = "to split open";
-answer[3] = "leech";
+answer[3] = "leach";
 answer[4] = "to throw away";
 answer[5] = "to slap";
 answer[6] = "to pluck";

@@ -5,7 +5,7 @@ mincorrect=30;
 minrun=3;
 var n=34;
 
-var namebase = "media/sounds/icelandic/";
+var namebase="media/sounds/icelandic/";
 for (var i=0; i<n; i++) {
     token = i+1;
     soundfiles[i] = namebase+"i"+token.toString();
@@ -52,4 +52,8 @@ answer[22] = "bite";  imgfiles[22] = imfile2;
 answer[28] = "dark";  imgfiles[28] = imfile2;
 answer[29] = "dew";  imgfiles[29] = imfile2;
 answer[30] = "grasps";  imgfiles[30] = imfile2;
+
+
+
+
 

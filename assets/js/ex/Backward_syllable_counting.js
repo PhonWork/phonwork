@@ -6,13 +6,13 @@ minrun=3;
 
 var namebase="media/sounds/backwards/"
 
-soundfiles[0]=namebase+"another_r"; soundfiles2[0]=namebase+"another"; answer[0]="2";
+soundfiles[0]=namebase+"another_r"; soundfiles2[0]=namebase+"another"; answer[0]="3";
 soundfiles[1]=namebase+"boistrous_r"; soundfiles2[1]=namebase+"boistrous"; answer[1]="2";
 soundfiles[2]=namebase+"button_r"; soundfiles2[2]=namebase+"button"; answer[2]="2";
 soundfiles[3]=namebase+"composite_r"; soundfiles2[3]=namebase+"composite"; answer[3]="3";
-soundfiles[4]=namebase+"eye_r"; soundfiles2[4]=namebase+"eye"; answer[4]="2";
-soundfiles[5]=namebase+"fire_r"; soundfiles2[5]=namebase+"fire"; answer[5]="2";
-soundfiles[6]=namebase+"impossibility_r"; soundfiles2[6]=namebase+"impossibility"; answer[6]="5";
+soundfiles[4]=namebase+"eye_r"; soundfiles2[4]=namebase+"eye"; answer[4]="1";
+soundfiles[5]=namebase+"fire_r"; soundfiles2[5]=namebase+"fire"; answer[5]="1";
+soundfiles[6]=namebase+"impossibility_r"; soundfiles2[6]=namebase+"impossibility"; answer[6]="6";
 soundfiles[7]=namebase+"laughter_r"; soundfiles2[7]=namebase+"laughter"; answer[7]="2";
 soundfiles[8]=namebase+"plots_r"; soundfiles2[8]=namebase+"plots"; answer[8]="1";
 soundfiles[9]=namebase+"prisoner_r"; soundfiles2[9]=namebase+"prisoner"; answer[9]="2";

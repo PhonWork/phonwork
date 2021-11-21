@@ -23,7 +23,7 @@ quest[7] = "A fricative [f] has a volume velocity of 340 cc/sec, and an intraora
 
 quest[8] = "The volume velocity through a constriction is 340 cc/sec, and the intraoral air pressure behind the constriction is 10cm H20. What is the Reynold's number of the airflow through this constriction?"
 
-imgfiles[0]="media/images/aero_formulas.png";
+imgfiles[0]="media/images/Boyles_law.png";
 imgfiles[1]="media/images/Boyles_law.png";
 imgfiles[2]="media/images/particle_velocity_formula.png";
 imgfiles[3]="media/images/volume_velocity_formula.png";

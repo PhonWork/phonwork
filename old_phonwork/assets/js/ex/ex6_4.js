@@ -5,7 +5,7 @@ mincorrect=20;
 minrun=3;
 var n=18;
 
-var namebase="sounds/armenian/a";  
+var namebase="media/sounds/armenian/a";  
 
 for (var i=0; i<n; i++) {
     token = i+1;

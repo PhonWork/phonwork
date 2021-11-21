@@ -5,7 +5,7 @@ mincorrect=10;
 minrun=3;
 var n=8;
 
-var namebase="sounds/bruu/b";
+var namebase="media/sounds/bruu/b";
 
 for (var i=0; i<n; i++) {
     token = i+1;

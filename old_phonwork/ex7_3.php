@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -31,7 +31,7 @@
       <div class="inner">
 	<h1>Zulu clicks</h1>
 
-	<span class="image fit"><img src="sounds/zulu/zm.gif" width="400px"></span>
+	<span class="image fit"><img src="media/sounds/zulu/zm.gif" width="400px"></span>
 
 	<p>What Zulu word is this?</p>
 

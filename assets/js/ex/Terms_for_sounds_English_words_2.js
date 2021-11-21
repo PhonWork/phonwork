@@ -40,4 +40,4 @@ quest[32]="Which of these has a front vowel: kit or put?"; answer[32]="kit";
 quest[33]="Which of these has a back vowel: made or coop?"; answer[33]="coop";
 quest[34]="Which of these has a back vowel: cop or weep?"; answer[34]="cop";
 quest[35]="Which of these has a round vowel: him or who?"; answer[35]="who";
-quest[36]="Which of these has a round vowel: low or lay?"; answer[36]="low";
+quest[36]="Which of these has a round vowel: food or fade?"; answer[36]="food";

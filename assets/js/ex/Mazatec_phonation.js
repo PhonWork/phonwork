@@ -6,9 +6,12 @@ minrun=3;
 
 var namebase="media/sounds/mazatec/mazatec";
 
-soundfiles[0] = namebase+"7"; answer[0] = "seed";
-soundfiles[1] = namebase+"9"; answer[1] = "buttocks";
-soundfiles[2] = namebase+"11"; answer[2] = "horse";
+soundfiles[i] = namebase+"7"; answer[0] = "seed";
+soundfiles[i] = namebase+"9"; answer[1] = "buttocks";
+soundfiles[i] = namebase+"11"; answer[2] = "horse";
+
+
+
 
 
 

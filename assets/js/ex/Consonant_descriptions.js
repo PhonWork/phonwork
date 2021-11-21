@@ -1,7 +1,7 @@
 // must assume the existence of some variables (defined in exercises.js)
 
 exerciseName = "Consonant descriptions";
-mincorrect=15;
+mincorrect=20;
 minrun=3;
 
 quest[0]="[s] place of articulation"; answer[0]="alveolar";

@@ -5,7 +5,7 @@ mincorrect=30;
 minrun=3;
 var n=34;
 
-var namebase="sounds/icelandic/";
+var namebase="media/sounds/icelandic/";
 for (var i=0; i<n; i++) {
     token = i+1;
     soundfiles[i] = namebase+"i"+token.toString();

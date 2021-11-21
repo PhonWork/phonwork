@@ -3,7 +3,7 @@
 exerciseName = "3.8 Formants of /a/";
 mincorrect=15;
 minrun=3;
-var namebase="images/ex/";
+var namebase="media/images/ex/";
 
 quest[0] = "What is the f1 of the back tube?"
 quest[1] = "What is the f2 of the back tube?"

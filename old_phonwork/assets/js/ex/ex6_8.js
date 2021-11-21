@@ -6,7 +6,7 @@ minrun=5;
 debug=1
 
 
-var namebase="sounds/nepali/Nepali_";
+var namebase="media/sounds/nepali/Nepali_";
 
 soundfiles[0] = namebase + "daal";
 soundfiles[1] = namebase + "dhaan";

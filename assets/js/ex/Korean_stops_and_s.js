@@ -17,14 +17,14 @@ answer[2] = "grass";
 answer[3] = "moon";
 answer[4] = "daughter";
 answer[5] = "mask";
-answer[6] = "weight";
+answer[6] = "weight|weight of measure";
 answer[7] = "rope";
 answer[8] = "large";
 answer[9] = "ruler";
 answer[10] = "salty";
 answer[11] = "tea";
-answer[12] = "flesh";
-answer[13] = "uncooked rice";
+answer[12] = "flesh|fat";
+answer[13] = "uncooked rice|rice";
 
 
 

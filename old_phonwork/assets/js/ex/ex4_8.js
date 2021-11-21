@@ -3,7 +3,7 @@
 exerciseName = "Malayalam Nasals";
 mincorrect=6;
 minrun=3;
-var namebase="sounds/malayalam/"
+var namebase="media/sounds/malayalam/"
 
 
 soundfiles[0] =namebase+"m7"; answer[0] = "shortage";

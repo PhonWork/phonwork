@@ -13,8 +13,6 @@ imgfiles[4] = namebase+ "nfr_duu.png";
 imgfiles[5] = namebase+ "nfr_shO.png";
 imgfiles[6] = namebase+ "nfr_kpOO.png";
 
-
-
 soundfiles[0] = namebase+ "nfr_tO";
 soundfiles[1] = namebase+ "nfr_gaabu";
 soundfiles[2] = namebase+ "nfr_gbun";
@@ -23,8 +21,6 @@ soundfiles[4] = namebase+ "nfr_duu";
 soundfiles[5] = namebase+ "nfr_shO";
 soundfiles[6] = namebase+ "nfr_kpOO";
 
-
-
 quest[0] = "What is the place of articulation of the initial consonant?";
 quest[1] = "What is the place of articulation of the initial consonant?";
 quest[2] = "What is the place of articulation of the initial consonant?";
@@ -32,8 +28,6 @@ quest[3] = "What is the place of articulation of the initial consonant?";
 quest[4] = "What is the place of articulation of the initial consonant?";
 quest[5] = "Should this word be transcribed as a. [ɕɔ̄] or b. [ʃɔ̄] ?";
 quest[6] = "Should this word be transcribed as a. [k͡pɔ̂ː] or b. [pɔ̂ː] ?";
-
-
 
 answer[0] = "alveolar";
 answer[1] = "velar";

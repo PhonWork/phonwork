@@ -17,7 +17,7 @@
       <div class="inner">
 	<!-- Logo -->
 	<a href="index.php" class="logo">
-	  <span class="symbol"><img src="images/logo.svg" alt="" /></span>
+	  <span class="symbol"><img src="media/images/logo.svg" alt="" /></span>
 	  <span class="title">Phonwork</span>
 	</a>
 	<!-- Nav -->
@@ -31,7 +31,7 @@
       <div class="inner">
 	<h1>Nasal Consonant Acoustics</h1>
 
-	<img src="images/nasal_vt_and_tubes.png" width="50%">
+	<img src="media/images/nasal_vt_and_tubes.png" width="50%">
 
 	<p><span id="question"></span>
 

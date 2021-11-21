@@ -1,9 +1,9 @@
 // must assume the existence of some variables (defined in exercises.js)
 
-exerciseName = "Toda Fricatives";
+exerciseName = "Toda Fricative Transcription";
 mincorrect=7;
 minrun=3;
-var namebase="sounds/toda/"
+var namebase="media/sounds/toda/"
 
 
 soundfiles[0] =namebase+"t1"; answer[0] = "f";

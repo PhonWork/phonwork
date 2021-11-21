@@ -4,6 +4,7 @@ exerciseName = "Zulu clicks";
 mincorrect=12;
 minrun=3;
 var n=12;
+debug=1;
 
 var namebase="media/sounds/zulu/z"; // files are lg/lg1.wav, etc
 
