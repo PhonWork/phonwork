@@ -16,6 +16,7 @@ cssdir = '../assets/css'
 enc = 'utf-8'
 imgdir = '../media/images'
 snddir = '../media/sounds' 
+datadir = '../assets/data'
 df = pd.read_csv("nametourl.csv", index_col=0)
 
 # Values to be interpolated into Jinja2 templates.
@@ -34,6 +35,8 @@ def prep_sitedir(sitedir, jsdir, cssdir):
     shutil.copytree(cssdir, os.path.join(sitedir, 'assets/css'))
     shutil.copytree(imgdir, os.path.join(sitedir, 'media/images'))
     shutil.copytree(snddir, os.path.join(sitedir, 'media/sounds'))
+    shutil.copytree(snddir, os.path.join(sitedir, 'assets/data'))
+
 
 
 def make_page(bodyfile, layout, cfg, templatedir, sitedir):
@@ -63,6 +66,8 @@ def make_page(bodyfile, layout, cfg, templatedir, sitedir):
     #print(script)
     
     title = re.search(r'(?<=Title)(.+)(?=Title)',var).group(0)
+    if title.find('Guess the word') > -1:
+        script = '"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>\n<script src="https://cdn.rawgit.com/evanplaice/jquery-csv/109ae716/src/jquery.csv.js"></script>\n<script src="' + jsdir[3:] + '/newguess.js"'
     #guess = "'" + re.search(r'(?<=Guess)(.+)(?=Guess)',var).group(0) + "'"
     
     body = re.search(r'(?<=Body)(.+)(?=Body)',var).group(0)
