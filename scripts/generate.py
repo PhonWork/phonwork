@@ -19,6 +19,10 @@ snddir = '../media/sounds'
 datadir = '../assets/data'
 df = pd.read_csv("nametourl.csv", index_col=0)
 
+
+#Full index list for search purposes
+pages = {}
+
 # Values to be interpolated into Jinja2 templates.
 cfg = {
     'mediapath': 'https://d3uxfe7dw0hhy7.cloudfront.net/phonwork/assets'
@@ -106,7 +110,7 @@ def make_indices(layout, section_db, cfg, templatedir, sitedir):
     print(index_url)
     
     pages = section_db.to_dict('records')
-    print(pages)
+    print("pages \n \n \n", pages, "\n")
 
     #Variables in layout.render are the variables set out by the _base_page html file
     #Differs from just body in that it also includes menu and other webpage items?
@@ -114,15 +118,31 @@ def make_indices(layout, section_db, cfg, templatedir, sitedir):
     
     with open(os.path.join(sitedir, index_url), 'w', encoding=enc) as f: f.write(page)
 
+def make_search_menu(df, sitedir, layout):
+    base = '<nav id="menu2"><!--<div class="inner">-->\n<input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Exercise Search.." title="Type in a category">\n<h2>Exercise Menu</h2>\n<ul id="hiddenMenu">\n'
+    mid = ''
+    other = '</ul>\n</nav>'
+    df[["SecNo", "ExNo"]] = df["Num"].str.split("_", expand=True)
+    df['ExNo'] = df['ExNo'].apply(lambda x: x.zfill(2))
+    df.sort_values(by=["SecNo", "ExNo"], inplace=True)
+    df["searchterms"] = df["Name"] + " " + df["Description"] + " " + df["Num"]
+    df["searchterms"] = df["Description"]
+    df["Num"] = df["Num"].str.replace("_", ".", regex=False)
+    df["displaytag"] = "<b>" + df["Num"] + " " + df["Name"] + "</b> \n"
+    pages = df[["Url", "searchterms", "displaytag"]].to_dict('records')
+    for item in pages:
+        mid += ('<li><td><a href="' + item["Url"] + '">' +  item["displaytag"] + '</a></td><td>' + item["searchterms"] + '</td></li>\n')
+    page = layout.render(main = base + mid + other)
+    with open(os.path.join(sitedir, "search"), 'w', encoding=enc) as f: f.write(page)
 
 
 if __name__ == '__main__':
     prep_sitedir(sitedir, jsdir, cssdir)
-
+    
     layout = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templatedir)
     ).get_template('_base_page.html')
-
+    
     for bodypath in glob.glob(os.path.join(templatedir, '*.html')):
         bodyfile = os.path.basename(bodypath)
         if bodyfile.startswith('_'):
@@ -138,6 +158,16 @@ if __name__ == '__main__':
         section_df = df.loc[section]
         #print(section_df)
         make_indices(sectionlayout, section_df, cfg, templatedir, sitedir)
+    
+    fullindex = jinja2.Environment(
+        loader=jinja2.FileSystemLoader(templatedir)
+    ).get_template('_hiddenmenu.html')
+    make_search_menu(df, sitedir, fullindex)
+    #print(hiddenmenu)
+        
+    
+    
+    
         
         
         
