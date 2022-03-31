@@ -1,5 +1,5 @@
 // must assume the existence of some variables (defined in exercises.js)
-
+// sourced from http://archive.phonetics.ucla.edu/Language/SND/snd_word-list_0000_01.html
 exerciseName = "Sindhi stops";
 mincorrect=10;
 minrun=3;
@@ -19,20 +19,20 @@ answer[4] = "manure";
 answer[5] = "door";
 answer[6] = "bottom";
 answer[7] = "(name)|(district name)|name|district name";
-answer[8] = "trunk";
+answer[8] = "trunk|trunk of body";
 answer[9] = "festival";
 answer[10] = "you run";
 answer[11] = "ton";
-answer[12] = "thug";
+answer[12] = "thug|cheat";
 answer[13] = "bull";
-answer[14] = "illiterate";
+answer[14] = "illiterate|name of a tribe";
 answer[15] = "illiterate (variant)";
 answer[16] = "to destroy";
 answer[17] = "crown";
 answer[18] = "a grab|grab";
 answer[19] = "handle";
 answer[20] = "quality";
-answer[21] = "ear";
+answer[21] = "eat";
 answer[22] = "you lift";
 answer[23] = "excess";
 

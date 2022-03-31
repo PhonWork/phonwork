@@ -11,7 +11,7 @@ for (var i=0; i<n; i++) {
     token = i+1;
     soundfiles[i] = namebase+token.toString();
 }
-answer[0] = "(name)";
+answer[0] = "(name)|nickname";
 answer[1] = "face";
 answer[2] = "aunt";
 answer[3] = "thick";
