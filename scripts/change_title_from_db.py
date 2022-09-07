@@ -1,7 +1,13 @@
 import re, os
-import pandas as pd
-df = pd.read_csv("nametourl.csv", index_col=2)
+import csv
 
+#CSV maps Old ID system to their new URLs (and convert .html to .js)
+with open('nametourl.csv', newline='') as csvfile:
+    rdr = csv.reader(csvfile, delimiter=',', quotechar='"')
+    rows = [r for r in rdr]
+head = rows.pop(0)
+recs = {r[2]: dict(zip(head, r)) for r in rows}
+ 
 os.chdir("../old_phonwork")
 files = [f for f in os.listdir('.') if re.match(r'^ex[0-9abc_]+\.php', f)]
 enc = 'utf-8'
@@ -14,14 +20,14 @@ for file in files:
     num = re.search('ex(.+).php', file).group(1)
 
     try:
-        dfname = df.loc[num].Name
-        filename = df.loc[num].Url
+        recname = recs[num]['Name']
+        filename = recs[num]['Url']
     except KeyError:
-        non_converted_files.append("\nFile does not have a mapping in the database: " + file)
+        non_converted_files.append(f'\nFile does not have a mapping in the database: {file}')
         print("File does not have a mapping in the database: " + file)
         continue
         
-    title = r"<title>" + dfname + r"</title>"
+    title = r"<title>" + recname + r"</title>"
     print("{}, {}".format(file, filename))
 
     bodyOnLoad = re.search(r'<body.+>', page).group(0)

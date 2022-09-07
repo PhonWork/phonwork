@@ -1,9 +1,12 @@
 import re, os
-import pandas as pd
+import csv
 
 #CSV maps Old ID system to their new URLs (and convert .html to .js)
-df = pd.read_csv("nametourl.csv", index_col=2)  
-df.Url = df.Url.replace(r'(.+)\.html', r'\1.js',regex=True)
+with open('nametourl.csv', newline='') as csvfile:
+    rdr = csv.reader(csvfile, delimiter=',', quotechar='"')
+    rows = [r for r in rdr]
+head = rows.pop(0)
+recs = {r[2]: dict(zip(head, r)) for r in rows}
  
 #JS Exercises Directory
 os.chdir("../old_phonwork/assets/js/ex")
@@ -31,12 +34,12 @@ for file in files:
     
     #Get new name from number
     try:
-        dfname = df.loc[num].Name
-        filename = df.loc[num].Url
-        print("{} \t {}".format(num,filename))
+        recname = recs[num]['Name']
+        filename = recs[num]['Url'].replace('.html', '.js')
+        print(f'{num}\t{filename}')
         
     except KeyError:
-        non_converted_files.append("\nFile does not have a mapping in the database: " + file)
+        non_converted_files.append(f'\nFile does not have a mapping in the database: {file}')
         continue
     
     with open('named_js/' + filename, 'w+', encoding=enc) as f:

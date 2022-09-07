@@ -3,8 +3,8 @@
 # Generate site html files.
 
 import os, sys, glob, shutil, re
+import csv
 import jinja2
-import pandas as pd
 
 templatedir = '../templates'
 sitedir = '../site'
@@ -71,15 +71,17 @@ def make_page(bodyfile, layout, cfg, templatedir, sitedir):
     
     with open(os.path.join(sitedir, bodyfile), 'w', encoding=enc) as f: f.write(page)
 
-def make_indices(layout, section_db, cfg, templatedir, sitedir):
+def make_indices(layout, pages, title, cfg, templatedir, sitedir):
     '''
     Generate an index html page using layout.
     Parameters
     ----------
     layout : template
     A loaded Jinja2 template for the site's index (_section) page layout.
-    section_db : DataFrame
-    A DataFrame corresponding to every exercise under a specific section
+    pages : list of dicts
+    A list of dicts corresponding to every exercise page under a specific section.
+    title : str
+    The section title.
     cfg : dict
     A configuration dictionary for site variables to be interpolated into
     the page body content.
@@ -88,13 +90,11 @@ def make_indices(layout, section_db, cfg, templatedir, sitedir):
     sitedir : str
     The directory path where output .html files will be written.
     '''
-    title = section_db.index.unique().values[0]
     
     index_url = "Section_" + re.sub(" ", "_", title) + ".html"
     print("Now adding: {}".format(index_url))
     
-    pages = section_db.to_dict('records')
-    #print(pages)
+    print("pages \n \n \n", pages, "\n")
 
     #Variables in layout.render are the variables set out by the _base_page html file
     #Differs from just body in that it also includes menu and other webpage items?
@@ -112,7 +112,19 @@ if __name__ == '__main__':
         csv_file = "nametourl.csv"
     
     try:
-        df = pd.read_csv(csv_file, index_col=0)
+        with open('nametourl.csv', newline='') as csvfile:
+            rdr = csv.reader(csvfile, delimiter=',', quotechar='"')
+            rows = [r for r in rdr]
+        head = rows.pop(0)
+        recs = {}
+        for r in rows:
+            rec = dict(zip(head, r))
+            if r[0] not in recs.keys():
+                recs[r[0]] = [rec]
+            else:
+                recs[r[0]].append(rec)
+
+
     except FileNotFoundError:
         sys.exit(1)
 
@@ -122,20 +134,19 @@ if __name__ == '__main__':
         loader=jinja2.FileSystemLoader(templatedir)
     ).get_template('_base_page.html')
 
-    for name in df.Name:
-        bodyfile = df.Url[df.Name==name].values[0]
-        print("Now adding: {}".format(bodyfile))
-        make_page(bodyfile, layout, cfg, templatedir, sitedir)
+    for section in recs.values():
+        for rec in section:
+            bodyfile = rec['Url']
+            print(f'Now adding: {bodyfile}')
+            make_page(bodyfile, layout, cfg, templatedir, sitedir)
         
     #put in code for making sections
     sectionlayout = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templatedir)
     ).get_template('_section.html')
     
-    for section in df.index.unique():
-        section_df = df.loc[section]
-        #print(section_df)
-        make_indices(sectionlayout, section_df, cfg, templatedir, sitedir)
+    for title, section in recs.items():
+        make_indices(sectionlayout, section, title, cfg, templatedir, sitedir)
         
     print("Lastly, add: index.html")
     make_page("index.html",layout, cfg, templatedir, sitedir)
