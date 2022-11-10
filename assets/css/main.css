@@ -2424,7 +2424,7 @@
 		table th {
 			font-size: 0.9em;
 			font-weight: 900;
-			padding: 0 0.75em 0.75em 0.75em;
+			padding: 0 0.75em 0.75em;
 			text-align: left;
 		}
 
@@ -2461,6 +2461,53 @@
 			table.alt tfoot {
 				border-top: 0;
 			}
+
+		table.exercise {
+			margin: 0 5em 2em 2em;
+			border-collapse:collapse;
+			width: auto;
+			line-height:1em;
+		}
+			table.exercise thead {
+				border-bottom: unset;
+				vertical-align: bottom;
+			}
+			table.exercise tbody tr {
+				border: unset;
+				background-color: #fff;
+			}
+
+			table.exercise th {
+				white-space:pre;
+				word-wrap:break-word;
+				text-align: center;
+				padding: 0 0.75em 0em;
+				font-size: .9em;
+				line-height:1em;
+				vertical-align: bottom;
+
+			}
+			table.exercise tbody td {
+				font-size:1.2em;
+				font-weight: 600;
+				padding: .8em .5em 0em;
+				text-align: center;
+				vertical-align: bottom;
+
+			}
+
+			table.exercise tbody tr.gloss td {
+				font-size: .8em;
+				font-weight: 100;
+				padding: 0 .5em .01em;
+				vertical-align: top;
+
+			}
+
+			
+
+
+
 
 /* Button */
 
@@ -2616,7 +2663,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
