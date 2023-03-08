@@ -137,3 +137,7 @@ _site/
 # Vim
 *.swp
 *~
+*.*~
+
+# Old phonwork
+*.php
