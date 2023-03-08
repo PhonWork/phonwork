@@ -46,7 +46,7 @@ jobs:
           git add . && \
           git commit -m "Site build from workflow action" && \
           echo "::debug::Pushing to target branch" && \
-          echo git push --force $REPO mysite:${inputs.target_branch} && \
+          echo "::debug::git push --force $REPO mysite:${inputs.target_branch} && \
           git push --force $REPO mysite:${inputs.target_branch} && \
           echo "SHA=$( git rev-parse mysite )" >> $GITHUB_OUTPUT
           rm -rf .git && \
