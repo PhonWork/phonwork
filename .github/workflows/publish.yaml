@@ -15,7 +15,7 @@ on:
         - site-prod
 
 env:
-  REPO: "https://${{GITHUB_ACTOR}}:${{secrets.GITHUB_TOKEN}}@github.com/${{GITHUB_REPOSITORY}}.git"
+  REPO: "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
 
 jobs:
   build:
@@ -35,6 +35,23 @@ jobs:
 
       - name:  build_site
         run: |
-          echo "repo $REPO"
-          echo "github actor ${{ github.actor }}"
-          echo "target branch ${{ inputs.target_branch }}"
+          cd scripts && \
+          echo "::debug::generating site"
+          python generate.py && \
+          echo "::debug::Initializing new repo (branch named 'mysite')"
+          cd ../site && \
+          git init -b mysite && \
+          git config user.name "${GITHUB_ACTOR}" && \
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
+          git add . && \
+          git commit -m "Site build from workflow action" && \
+          echo "::debug::Pushing to target branch" && \
+          echo "::debug::${REPO}" && \
+          echo "::debug::${{ inputs.target_branch }}" && \
+          echo "::debug::git push --force ${REPO} mysite:${{ inputs.target_branch }}" && \
+          echo "::debug::pushing" && \
+          git push --force $REPO mysite:${{ inputs.target_branch }} && \
+          echo "SHA=$( git rev-parse mysite )" >> $GITHUB_OUTPUT
+          rm -rf .git && \
+          cd ..
+
