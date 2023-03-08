@@ -1,7 +1,7 @@
-# This action builds the CLA website and copies the files to the
-# gh-pages-dev branch when a commit is pushed to github.
+# This action builds the PhonWork website and copies the files to the
+# site-dev or site-prod branch.
 
-name: Build phonwork website and deploy site-* branch
+name: Build phonwork website and deploy to a site-* branch
 
 on:
   workflow_dispatch:
