@@ -36,7 +36,7 @@ jobs:
       - name:  build_site
         run:
           cd scripts && \
-          python3 generate.py && \
+          python generate.py && \
           echo "::debug::generated site"
           git config user.name "${GITHUB_ACTOR}" && \
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
