@@ -36,5 +36,5 @@ jobs:
       - name:  build_site
         run: |
           echo "repo $REPO"
-          echo "github actor $GITHUB_ACTOR"
+          echo "github actor ${{ github.actor }}"
           echo "target branch ${{ inputs.target_branch }}"
