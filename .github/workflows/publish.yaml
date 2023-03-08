@@ -36,8 +36,10 @@ jobs:
       - name:  build_site
         run: |
           cd scripts && \
+          echo "::debug::generating site"
           python generate.py && \
           echo "::debug::generated site"
+          echo "::debug::GITHUB_ACTOR is ${GITHUB_ACTOR}."
           git config user.name "${GITHUB_ACTOR}" && \
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
           echo "::debug::commit author is set to the default github actor"
@@ -45,7 +47,7 @@ jobs:
           cd ../site && \
           git init -b mysite && \
           git add . && \
-          git commit -m "site build from Action ${GITHUB_SHA}" && \
+          git commit -m "Site build from workflow action" && \
           echo "::debug::Pushing to target branch" && \
           git push --force $REPO mysite:${inputs.target_branch} && \
           echo "SHA=$( git rev-parse mysite )" >> $GITHUB_OUTPUT
