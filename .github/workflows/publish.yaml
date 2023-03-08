@@ -27,7 +27,7 @@ jobs:
       # Install apt dependencies with caching for faster builds.
       - uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: python-jinja2
+          packages: python3 python-jinja2
           version: 1.0
 
       - name:  build_site
