@@ -1,0 +1,51 @@
+# This action builds the CLA website and copies the files to the
+# gh-pages-dev branch when a commit is pushed to github.
+
+name: Build phonwork dev website and deploy to gh-pages-dev branch
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: Branch to which generated site will be pushed
+        type: choice
+        required: true
+        options:
+        - site-dev
+        - site-prod
+        default: site-dev
+env:
+  REPO: "https://${GITHUB_ACTOR}:${secrets.GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+ 
+    steps:
+      - uses: actions/checkout@v3
+
+      # Install apt dependencies with caching for faster builds.
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: python-jinja2
+          version: 1.0
+
+      - name:  build_site
+        run:
+          cd scripts && \
+          python generate.py && \
+          echo "::debug::generated site"
+          git config user.name "${GITHUB_ACTOR}" && \
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
+          echo "::debug::commit author is set to the default github actor"
+          echo "::debug::Initializing new repo (branch named 'mysite')"
+          cd site && \
+          git init -b mysite && \
+          git add . && \
+          git commit -m "site build from Action ${GITHUB_SHA}" && \
+          echo "::debug::Pushing to target branch" && \
+          git push --force $REPO mysite:${inputs.target_branch} && \
+          echo "SHA=$( git rev-parse mysite )" >> $GITHUB_OUTPUT
+          rm -rf .git && \
+          cd .. 
+
