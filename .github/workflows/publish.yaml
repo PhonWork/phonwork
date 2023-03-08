@@ -1,7 +1,7 @@
 # This action builds the CLA website and copies the files to the
 # gh-pages-dev branch when a commit is pushed to github.
 
-name: Build phonwork dev website and deploy to gh-pages-dev branch
+name: Build phonwork website and deploy site-* branch
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ on:
         options:
         - site-dev
         - site-prod
-        default: site-dev
+
 env:
   REPO: "https://${GITHUB_ACTOR}:${secrets.GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
@@ -33,7 +33,7 @@ jobs:
       - name:  build_site
         run:
           cd scripts && \
-          python generate.py && \
+          python3 generate.py && \
           echo "::debug::generated site"
           git config user.name "${GITHUB_ACTOR}" && \
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
