@@ -42,7 +42,7 @@ jobs:
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
           echo "::debug::commit author is set to the default github actor"
           echo "::debug::Initializing new repo (branch named 'mysite')"
-          cd site && \
+          cd ../site && \
           git init -b mysite && \
           git add . && \
           git commit -m "site build from Action ${GITHUB_SHA}" && \
