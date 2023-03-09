@@ -13,6 +13,15 @@ on:
         options:
         - site-dev
         - site-prod
+      submodules:
+        description: Checkout submodules?
+        type: choice
+        required: true
+        options:
+        - false
+        - true
+        - recursive
+        default: recursive
 
 env:
   REPO: "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
@@ -23,6 +32,8 @@ jobs:
  
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: ${{ inputs.submodules }}
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v4
