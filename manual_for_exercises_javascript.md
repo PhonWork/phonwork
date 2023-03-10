@@ -2,7 +2,7 @@
 
 ## A typical exercise ##
 
-The html file for the "vocal tract tour" (https://linguistics.berkeley.edu/phonwork/vocal_tract_tour.html) shows 
+The html file for the "vocal tract tour" (https://linguistics.berkeley.edu/phonwork/Vocal_tract_tour.html) shows 
 a saggital view of the vocal tract with articulatory landmarks labeled by numbers (this is after exercise A 
 of Chapter 1 in Ladefoged & Johnson, 2011).  The exercise then asks the student to type in the name of 
 the articulatory landmark that corresponds to a number.  If the typed answer is correct another randomly selected 
