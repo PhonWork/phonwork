@@ -20,8 +20,7 @@ on:
         options:
         - false
         - true
-        - recursive
-        default: recursive
+        default: true
 
 env:
   REPO: "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
@@ -48,7 +47,14 @@ jobs:
         run: |
           cd scripts && \
           echo "::debug::generating site"
-          python generate.py && \
+          python generate.py
+          if [ ${{ inputs.submodules }} = 'true' ]
+          then
+            echo "::debug::Moving submodule directories to site/"
+            git submodule foreach 'cd .. && mv "{sm_path}" site/"'
+          else
+            echo "::debug::Not including submodules in site/"
+          fi
           echo "::debug::Initializing new repo (branch named 'mysite')"
           cd ../site && \
           git init -b mysite && \

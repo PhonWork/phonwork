@@ -87,7 +87,7 @@ your server.
 1. Find the [`Build phonwork website and deploy to a site-* branch` workflow](https://github.com/PhonWork/phonwork/actions/workflows/publish.yaml) under the Actions tab.
 1. Click on the `Run workflow` button.
 1. Choose the branch you would like to push to, either `site-dev` (development version) or `site-prod` (production).
-1. Choose whether to include submodules. Use `true` to checkout submodules or `recursive` to recursively checkout submodules.
+1. Choose whether to include submodules. Use `true` to checkout submodules.
 1. Click 'Run workflow`.
 
 When the workflow completes successfully pull the branch to your server:
