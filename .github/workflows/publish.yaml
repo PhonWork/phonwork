@@ -51,7 +51,7 @@ jobs:
           if [ ${{ inputs.submodules }} = 'true' ]
           then
             echo "::debug::Moving submodule directories to site/"
-            git submodule foreach 'cd .. && export spath=`echo ${sm_path} | sed 's/^_//'` && mv "${spath}" site/'
+            git submodule foreach 'cd .. && export dest=`echo "${sm_path}" | sed 's/^_//'` && mv "${sm_path}" site/${dest}'
           else
             echo "::debug::Not including submodules in site/"
           fi
