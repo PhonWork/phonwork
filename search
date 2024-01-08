@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Search Exercises</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/search.js"></script>
+
+</head>
+	<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      
+    <!-- Header -->
+    <header id="header">
+	  <div class="inner">
+	  <!-- Logo -->
+	  <a href="index.html" class="logo">
+	    <span class="symbol"><img src="media/images/logo.svg" alt=""></span>
+	    <span class="title">Phonwork</span>
+	  </a>
+	  <!-- Nav -->
+	  <nav>
+	    <ul>
+	      <li><a href="#menu">Menu</a></li>
+	    </ul>
+	  </nav>
+      </div>
+    </header>
+
+	  
+	  	<nav id="menu"><!--<div class="inner">-->
+	  <form method="get" action="https://linguistics.berkeley.edu/phonwork/search">
+        <input type="search" name="q" id="menuSearch" placeholder="Exercise Search.." title="Type in an exercise">
+      </form>
+      <h2>Menu</h2>
+      <ul id="myMenu"> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Section_Start_here.html">1. Start here</a></li>
+        <li><a href="Section_The_IPA.html">2. The IPA</a></li>
+        <li><a href="Section_Language_examples.html">3. Language Examples</a></li>
+        <li><a href="Section_Acoustic_theory.html">4. Acoustic Phonetics</a></li>
+        <li><a href="Section_Prosody.html">5. Prosody</a></li>
+        <li><a href="Section_Articulatory_Phonetics.html">6. Articulatory Phonetics</a></li>
+	<li><a href="Section_Aerodynamics.html">7. Aerodynamic Phonetics</a></li>
+      </ul>
+    <!--</div>--><a class="close" href="#menu">Close</a>
+	</nav>
+		
+	  <div id="main">
+	  <div class="inner">
+	  	  <section>
+			<nav id="menu2"><!--<div class="inner">-->
+<input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Exercise Search.." title="Type in a category">
+<h2>Exercise Menu</h2>
+<ul id="hiddenMenu">
+<li><td><a href="Vocal_tract_tour.html"><b>1.1 Vocal tract tour</b></a></td><td>Identify landmarks in the vocal tract.</td></li>
+<li><td><a href="Consonant_descriptions.html"><b>1.2 Consonant descriptions</b></a></td><td>Associate phonetic properties with IPA symbols.</td></li>
+<li><td><a href="Terms_for_sounds_English_words_1.html"><b>1.3 Terms for sounds in English words - 1</b></a></td><td>Terms as they are used to describe sounds in English.</td></li>
+<li><td><a href="Bells_visible_speech.html"><b>1.4 Bell's visible speech</b></a></td><td>Take a look at an "organic" phonetic alphabet.</td></li>
+<li><td><a href="Terms_for_sounds_English_words_2.html"><b>1.5 Terms for sounds in English words - 2</b></a></td><td>Review phonetic terms for English sounds.</td></li>
+<li><td><a href="ten_wasps_waveform.html"><b>1.6 Ten wasps waveform</b></a></td><td>Identify parts of an acoustic waveform.</td></li>
+<li><td><a href="One_of_these_vowels.html"><b>1.7 One of these vowels</b></a></td><td>Compare how vowels sound to how they are spelled.</td></li>
+<li><td><a href="Backward_syllable_counting.html"><b>1.8 Backward syllable counting</b></a></td><td>Counting syllables in acoustically reversed speech.</td></li>
+<li><td><a href="basic_acoustics.html"><b>1.9 Basic acoustics</b></a></td><td>Basic concepts in acoustics.</td></li>
+<li><td><a href="IPA_English_sounds_1.html"><b>1.a IPA Practice: English sounds 1</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="IPA_English_sounds_2.html"><b>1.b IPA Practice: English sounds 2</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="IPA_English_sounds_3.html"><b>1.c IPA Practice: English sounds 3</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="resonance_formulas.html"><b>1.10 Resonance formulas</b></a></td><td>Two key formulas used to calculate resonant frequencies in tubes.</td></li>
+<li><td><a href="Vowel_descriptions.html"><b>1.11 Vowel descriptions</b></a></td><td>Associate phonetic properties with IPA symbols.</td></li>
+<li><td><a href="Guess_the_word_sagittal_view.html"><b>10.1 Guess the word - sagittal view</b></a></td><td>Based on X-ray microbeam data - can you guess the word?.</td></li>
+<li><td><a href="Guess_the_word_time_traces.html"><b>10.2 Guess the word - time traces</b></a></td><td>Based on X-ray microbeam data - can you guess the word?.</td></li>
+<li><td><a href="Laryngeal_Anatomy.html"><b>2.1 Laryngeal Anatomy</b></a></td><td>The muscles and cartilages of the larynx, and the adduction and abduction of the vocal folds.</td></li>
+<li><td><a href="The_myoelestic_aerodynamic_theory.html"><b>2.2 The myoelestic aerodynamic theory</b></a></td><td>Modeling of the muscular-elastic and aerodynamic forces that are involved in phonation.</td></li>
+<li><td><a href="Stop_voicing.html"><b>2.a Stop voicing</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="Consonant_voicing.html"><b>2.b Consonant voicing</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="Primary_Cardinal_Vowels.html"><b>3.1 Primary Cardinal Vowels</b></a></td><td>Learn to identify the Primary Cardinal Vowels as spoken by Daniel Jones and Peter Ladefoged.</td></li>
+<li><td><a href="Secondary_Cardinal_Vowels.html"><b>3.2 Secondary Cardinal Vowels</b></a></td><td>Learn to identify the Secondary Cardinal Vowels as spoken by Daniel Jones and Peter Ladefoged.</td></li>
+<li><td><a href="Vocal_Tract_Resonance.html"><b>3.3 Vocal Tract Resonance</b></a></td><td>Calculate resonant frequencies (F1, F2, F3) in uniform tubes.</td></li>
+<li><td><a href="Saying_the_Primary_CVs.html"><b>3.4 Saying the Primary CVs</b></a></td><td>Learn to say the Primary Cardinal Vowels.</td></li>
+<li><td><a href="Saying_the_Secondary_CVs.html"><b>3.5 Saying the Secondary CVs</b></a></td><td>Learn to say the Secondary Cardinal Vowels.</td></li>
+<li><td><a href="MRIs_of_Cardinal_Vowels.html"><b>3.6 MRIs of Cardinal Vowels</b></a></td><td>See if you can identify Cardinal Vowels from saggital MRI.</td></li>
+<li><td><a href="Vowel_Muscles.html"><b>3.7 Vowel Muscles</b></a></td><td>Review of (some of the) muscles involved in vowel production.</td></li>
+<li><td><a href="Formants_of_a.html"><b>3.8 Formants of [a]</b></a></td><td>Calculate F1-3 of a two-tube model of the vocal tract.</td></li>
+<li><td><a href="Formants_two_tube_models.html"><b>3.9 Formants in two-tube models</b></a></td><td>Calculate F1-3 of a two-tube model of the vocal tract.</td></li>
+<li><td><a href="IPA_Isolated_vowels_1.html"><b>3.a IPA Practice: Isolated vowels - 1</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="IPA_Isolated_vowels_2.html"><b>3.b IPA Practice: Isolated vowels - 2</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="IPA_Vowels_context.html"><b>3.c IPA Practice: Vowels in context</b></a></td><td>Work with a partner, and practice IPA Production and Transcription.</td></li>
+<li><td><a href="Perturbation_theory.html"><b>3.10 Perturbation theory</b></a></td><td>Use the principles of Perturbation theory to predict formant frequencies.</td></li>
+<li><td><a href="Formants_an_i_model.html"><b>3.11 Formants in an [i] model</b></a></td><td>Calculate F1-3 of a three-tube model of the vocal tract.</td></li>
+<li><td><a href="Transcribe_vowels.html"><b>3.12 Transcribe vowels</b></a></td><td>Use the IPA to transcribe the vowels in a minimal set in a particular language.</td></li>
+<li><td><a href="Review_of_vocal_tract_terms.html"><b>4.1 Review of vocal tract terms</b></a></td><td>This is a review of the saggital section of the head an terms used to describe sounds.</td></li>
+<li><td><a href="Active_and_Passive_Articulators.html"><b>4.2 Active and Passive Articulators</b></a></td><td>Review the articulators involved in different places of articulation in the IPA.</td></li>
+<li><td><a href="Changing_places.html"><b>4.3 Changing places</b></a></td><td>What word results from changing the place of articulation?</td></li>
+<li><td><a href="Intrinsic_tongue_muscles_sagittal.html"><b>4.4 Intrinsic tongue muscles - sagittal</b></a></td><td>Identify the intrinsic tongue muscles in a mid-sagittal section of the vocal tract.</td></li>
+<li><td><a href="Intrinsic_tongue_muscles_coronal.html"><b>4.5 Intrinsic tongue muscles - coronal</b></a></td><td>Identify the intrinsic tongue muscles in a coronal section of the vocal tract.</td></li>
+<li><td><a href="Polish_Fricatives.html"><b>4.6 Polish Fricatives</b></a></td><td>Identify the transcribed words of Polish.</td></li>
+<li><td><a href="Mandarin_Fricatives.html"><b>4.7 Mandarin Fricatives</b></a></td><td>Identify the transcribed words of Mandarin.</td></li>
+<li><td><a href="Malayalam_Nasals.html"><b>4.8 Malayalam Nasals</b></a></td><td>Identify the transcribed words of Malayalam.</td></li>
+<li><td><a href="MRI_images_of_voiceless_fricatives.html"><b>4.9 MRI images of voiceless fricatives</b></a></td><td>Identify the place of articulation of voiceless fricatives from MRI images.</td></li>
+<li><td><a href="IPA_Fricative_Place.html"><b>4.a IPA Practice: Fricative Place</b></a></td><td>Practice reading and writing IPA transcription.</td></li>
+<li><td><a href="IPA_Stop_Place.html"><b>4.b IPA Practice: Stop Place</b></a></td><td>Practice reading and writing IPA transcription.</td></li>
+<li><td><a href="Toda_Fricatives.html"><b>4.10 Toda Fricatives</b></a></td><td>Identify the transcribed words in Toda.</td></li>
+<li><td><a href="Place_Terms.html"><b>4.11 Place Terms</b></a></td><td>Complete the phonetic description.</td></li>
+<li><td><a href="Mam_place_of_articulation.html"><b>4.12 Mam place of articulation</b></a></td><td>With waveform, spectrogram, and audio - identify the place of articulation.</td></li>
+<li><td><a href="Polish_Fricatives_transcription.html"><b>4.13 Polish Fricatives - transcription</b></a></td><td>Choose the phonetic transcription.</td></li>
+<li><td><a href="Toda_Fricatives_transcription.html"><b>4.14 Toda Fricatives - transcription</b></a></td><td>Choose the phonetic transcription.</td></li>
+<li><td><a href="French_semi_vowels.html"><b>4.15 French semi vowels</b></a></td><td>Identify French words illustrating different semivowels.</td></li>
+<li><td><a href="Terms_about_manner.html"><b>5.1 Terms about manner</b></a></td><td>Review terms and IPA symbols associated with different manners of articulation.</td></li>
+<li><td><a href="Name_the_manner.html"><b>5.2 Name the manner</b></a></td><td>Manner of articulation for select IPA symbols - and an invitation to say example words with those symbols.</td></li>
+<li><td><a href="Toda_rhotics.html"><b>5.3 Toda rhotics</b></a></td><td>Identify Toda words illustrating different trills.</td></li>
+<li><td><a href="Hindi_Stops_transcription.html"><b>5.4 Hindi Stops - transcription</b></a></td><td>Choose the phonetic transcription.</td></li>
+<li><td><a href="Using_aerodynamic_formulas.html"><b>5.5 Using aerodynamic formulas</b></a></td><td>Practice using key formulas to calculate aerodynamic properties of speech.</td></li>
+<li><td><a href="Nasal_consonant_acoustics.html"><b>5.6 Nasal consonant acoustics</b></a></td><td>Formants and antiformants in nasal consonants.</td></li>
+<li><td><a href="IPA_Manner_.html"><b>5.a IPA Practice: Manner</b></a></td><td>Work with a partner, and practice IPA production and transcription.</td></li>
+<li><td><a href="Sindhi_stops.html"><b>6.1 Sindhi stops</b></a></td><td>Hearing the stop voicing contrasts.</td></li>
+<li><td><a href="Thai_stops.html"><b>6.2 Thai stops</b></a></td><td>Hearing the stop voicing contrasts.</td></li>
+<li><td><a href="Korean_stops_and_s.html"><b>6.3 Korean stops and /s/</b></a></td><td>Hearing the stop voicing contrasts.</td></li>
+<li><td><a href="Armenian_stops_and_affricates.html"><b>6.4 Armenian stops and affricates</b></a></td><td>Hearing the stop voicing contrasts.</td></li>
+<li><td><a href="Mazatec_phonation.html"><b>6.5 Mazatec phonation</b></a></td><td>Hearing the contrast between modal, creaky and breathy voice.</td></li>
+<li><td><a href="Bruu.html"><b>6.6 Bruu</b></a></td><td>Hearing the contrast between breathy and creaky voice.</td></li>
+<li><td><a href="Yuxi_tone_2_tone_5.html"><b>6.7 Yuxi - tone 2, tone 5</b></a></td><td>Can you hear a difference between two tones in Yuxi?</td></li>
+<li><td><a href="Nepali_stops.html"><b>6.8 Nepali</b></a></td><td>Hearing the four-way stop contrast in Nepali.</td></li>
+<li><td><a href="IPA_for_airstream_mechanisms.html"><b>7.1 IPA for airstream mechanisms</b></a></td><td>A review of symbols and terminology.</td></li>
+<li><td><a href="Igbo_VOT_and_implosives.html"><b>7.2 Igbo VOT and implosives</b></a></td><td>Identify words of Igbo that have constrasting medial stops.</td></li>
+<li><td><a href="Zulu_clicks.html"><b>7.3 Zulu clicks</b></a></td><td>Identify words of Zulu that illustrate click place and accompaniments.</td></li>
+<li><td><a href="Infrahyoid_muscles.html"><b>7.4 Infrahyoid muscles</b></a></td><td>Muscles below the hyoid that are involved in pulling the hyoid bone down.</td></li>
+<li><td><a href="Transcription_practice_implosives.html"><b>7.5 Transcription practice: implosives</b></a></td><td>Choose the correct transcriptions of the implosives.</td></li>
+<li><td><a href="Transcription_practice_clicks.html"><b>7.6 Transcription practice: clicks</b></a></td><td>Choose the correct transcriptions of the click sounds .</td></li>
+<li><td><a href="IPA_Airstream_mechanisms.html"><b>7.a IPA Practice: Airstream mechanisms</b></a></td><td>Work with a partner, and practice IPA production and transcription.</td></li>
+<li><td><a href="Russian_palatalization.html"><b>8.1 Russian palatalization</b></a></td><td>Hear a word and identify it from a phonetically transcribed list.</td></li>
+<li><td><a href="Nafaanra_place_of_articulation.html"><b>8.2 Nafaanra place of articulation</b></a></td><td>Choose the place of articulation of consonants in Nafaanra, based on audio and spectrograms.</td></li>
+<li><td><a href="Arabic_pharyngealization.html"><b>8.3 Arabic pharyngealization</b></a></td><td>Hear a word and identify it from a phonetically transcribed list.</td></li>
+<li><td><a href="Bura_labialization.html"><b>8.4 Bura labialization</b></a></td><td>Hear a word and identify it from a phonetically transcribed list.</td></li>
+<li><td><a href="Ibibio_labio_velar_stops.html"><b>8.5 Ibibio labio-velar stops</b></a></td><td>Hear a word and identify it from a phonetically transcribed list.</td></li>
+<li><td><a href="Spectrogram_reading.html"><b>8.6 Spectrogram reading</b></a></td><td>Choose a phonetic transcription based on the spectrogram.</td></li>
+<li><td><a href="Transcription_secondary_articulation.html"><b>8.7 Transcription - secondary articulation</b></a></td><td>Choose a phonetic transcription based on listening.</td></li>
+<li><td><a href="IPA_Complex_sounds.html"><b>8.a IPA Practice: Complex sounds</b></a></td><td>secondary articulation, simultaneous stops, with native speaker models</td></li>
+<li><td><a href="Quantity_Italian.html"><b>9.1 Quantity in Italian</b></a></td><td>Hearing differences in vowel and consonant length differences.</td></li>
+<li><td><a href="Quantity_Icelandic.html"><b>9.2 Quantity in Icelandic</b></a></td><td>Hearing vowel and consonant length differences (and preaspiration!).</td></li>
+<li><td><a href="Tone_Ibibio.html"><b>9.3 Tone in Ibibio</b></a></td><td>Hearing pitch patterns in H, L, and Falling tones.</td></li>
+<li><td><a href="Cantonese_Tones.html"><b>9.4 Cantonese Tones</b></a></td><td>Hearing the six tones of Cantonese.</td></li>
+<li><td><a href="Tone_Thai.html"><b>9.5 Tone in Thai</b></a></td><td>Hearing the five tones of Thai.</td></li>
+<li><td><a href="Hmong_tones.html"><b>9.6 Hmong tones</b></a></td><td>Hearing tone in Hmong - phonation and pitch are cues.</td></li>
+</ul>
+</nav>
+			</section>  
+		 </div>
+	  </div>
+          
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <section>
+	  <h2>Follow</h2>
+	  <ul class="icons">
+	    <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+	    <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+	  </ul>
+	</section>
+	<ul class="copyright">
+	  <li>&copy; Keith Johnson. All rights reserved</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+	</ul>
+      </div>
+    </footer>
+
+    </div>
+
+	
+  </body>
+</html>
+
+
+	
