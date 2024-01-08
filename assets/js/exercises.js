@@ -296,7 +296,7 @@ function make_png_cert( exname ) {
 		alert("pop-up blocker is enabled.  Please add this site to your exception list.");
 	    }
 	},false);
-        image1.src = "images/bg_snippet.png";
+        image1.src = "media/images/bg_snippet.png";
 	return true;
     } else {
 	return false;
@@ -327,7 +327,7 @@ function make_inline_png_cert( exname ) {
 	    document.getElementById("feedback").innerHTML="Right click the certificate below to view or save it";
 	    $('#main').append($('<img/>', {src: url}));
 	},false);
-	image1.src = "images/bg_snippet.png";
+	image1.src = "media/images/bg_snippet.png";
 
 	return true;
     } else {
